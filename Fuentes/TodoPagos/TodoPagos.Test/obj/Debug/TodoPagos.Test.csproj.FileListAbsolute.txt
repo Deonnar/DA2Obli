@@ -1,0 +1,11 @@
+<<<<<<< HEAD
+C:\Users\VBox\Desktop\DA2\Fuentes\TodoPagos\TodoPagos.Test\bin\Debug\TodoPagos.Test.dll
+C:\Users\VBox\Desktop\DA2\Fuentes\TodoPagos\TodoPagos.Test\bin\Debug\TodoPagos.Test.pdb
+C:\Users\VBox\Desktop\DA2\Fuentes\TodoPagos\TodoPagos.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\VBox\Desktop\DA2\Fuentes\TodoPagos\TodoPagos.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\VBox\Desktop\DA2\Fuentes\TodoPagos\TodoPagos.Test\obj\Debug\TodoPagos.Test.csprojResolveAssemblyReference.cache
+C:\Users\VBox\Desktop\DA2\Fuentes\TodoPagos\TodoPagos.Test\obj\Debug\TodoPagos.Test.dll
+C:\Users\VBox\Desktop\DA2\Fuentes\TodoPagos\TodoPagos.Test\obj\Debug\TodoPagos.Test.pdb
+=======
+C:\Users\Emiliano\Documents\DA2Obligatorio\Fuentes\TodoPagos\TodoPagos.Test\obj\Debug\TodoPagos.Test.csprojResolveAssemblyReference.cache
+>>>>>>> Pruebas

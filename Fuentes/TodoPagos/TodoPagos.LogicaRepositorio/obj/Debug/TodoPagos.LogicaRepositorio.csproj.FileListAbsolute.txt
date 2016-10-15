@@ -1,0 +1,16 @@
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\obj\Debug\TodoPagos.LogicaRepositorio.csprojResolveAssemblyReference.cache
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\bin\Debug\TodoPagos.LogicaRepositorio.dll.config
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\bin\Debug\TodoPagos.LogicaRepositorio.dll
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\bin\Debug\TodoPagos.LogicaRepositorio.pdb
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\bin\Debug\EntityFramework.dll
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\bin\Debug\TodoPagos.Dominio.dll
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\bin\Debug\TodoPagos.LogicaNegocio.dll
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\bin\Debug\TodoPagos.Dominio.pdb
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\bin\Debug\TodoPagos.LogicaNegocio.pdb
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\bin\Debug\EntityFramework.xml
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\obj\Debug\TodoPagos.LogicaRepositorio.dll
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\obj\Debug\TodoPagos.LogicaRepositorio.pdb
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\bin\Debug\es\EntityFramework.SqlServer.resources.dll
