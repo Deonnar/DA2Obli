@@ -30,9 +30,6 @@ namespace TodoPagos.Test.Gestores
 
 
         [TestMethod]
-<<<<<<< HEAD
-        public void CrearCajero(string nombre, string apellido, string cedula, string direccion)
-=======
         public void NuevaCajeroTest()
         {
             SetUp();
@@ -87,12 +84,6 @@ namespace TodoPagos.Test.Gestores
         }
     }
 
-    [TestMethod]
-        public void CrearCajero(string nombre, string apellido, string cedula, string apelllido)
->>>>>>> Pruebas
-        {
-            
-        }
         /*
         [TestMethod]
         public void GetAllCajeros()
