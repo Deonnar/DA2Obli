@@ -19,13 +19,13 @@ namespace TodoPagos.RestApi.Controllers
             return RepositorioUsuarios.ObtenerUsuarios();
         }
 
-        // GET api/<controller>/5
+        // GET api/<controller>/11
         public IHttpActionResult Get(int id)
         {
             try
             {
-            //    Usuario usuario = UsuarioFuncionalidades.Obtener(id);
-             //   return Ok(usuario);
+                Usuario usuario = RepositorioUsuarios.ObtenerUsuario(id);
+                return Ok(usuario);
             }
             catch (Exception e)
             {
@@ -33,14 +33,13 @@ namespace TodoPagos.RestApi.Controllers
             }
             return null;
         }
-
-
+        
         // POST api/<controller>
         public IHttpActionResult Post([FromBody]Usuario usuario)
         {
             try
             {
-           //     UsuarioFuncionalidades.Agregar(usuario);
+                //  RepositorioUsuarios.Agregar(usuario);
                 return Ok();
             }
             catch (Exception e)
@@ -48,13 +47,14 @@ namespace TodoPagos.RestApi.Controllers
                 return BadRequest(e.Message);
             }
         }
+        
 
         // PUT api/<controller>/5
         public IHttpActionResult Put(int id, [FromBody]Usuario usuario)
         {
             try
             {
-           //     UsuarioFuncionalidades.Modificar(id, usuario);
+                //     RepositorioUsuarios.Modificar(id, usuario);
                 return Ok(usuario);
             }
             catch (Exception e)
@@ -63,7 +63,7 @@ namespace TodoPagos.RestApi.Controllers
             }
         }
 
-        // DELETE api/<controller>/5
+        // DELETE api/<controller>/11
         public void Delete(int id)
         {
             // No se implementa
