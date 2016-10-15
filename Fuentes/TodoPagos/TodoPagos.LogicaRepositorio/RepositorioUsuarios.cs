@@ -15,18 +15,18 @@ namespace TodoPagos.LogicaRepositorio
         public static void Agregar(int IdUsuario)
         {
             
-            BdContexto ctx = BdContexto.GetInstance();
-            Usuario usuario = ctx.Usuarios.Include("Usuarios").ToList().Find(u => u.UsuarioId == IdUsuario);
-            ctx.SaveChanges();
+            BdContexto contexto = BdContexto.GetInstance();
+            Usuario usuario = contexto.Usuarios.Include("Usuarios").ToList().Find(u => u.UsuarioId == IdUsuario);
+            contexto.SaveChanges();
         }
 
         public static IEnumerable<Usuario> ObtenerUsuarios()
         {
-            Usuario up = new Usuario();
-            up.Nombre = "usuario 2";
-            Agregar(up);
-            BdContexto ctx = BdContexto.GetInstance();
-            var usuarios = (from u in ctx.Usuarios
+           // Usuario up = new Usuario();
+           // up.Nombre = "usuario 2";
+           // Agregar(up);
+            BdContexto contexto = BdContexto.GetInstance();
+            var usuarios = (from u in contexto.Usuarios
                             orderby u.Nombre
                             select u);
             return usuarios;
@@ -34,15 +34,15 @@ namespace TodoPagos.LogicaRepositorio
 
         public static void Agregar(Usuario unUsuario)
         {
-            BdContexto ctx = BdContexto.GetInstance();
-            ctx.Usuarios.Add(unUsuario);
-            ctx.SaveChanges();
+            BdContexto contexto = BdContexto.GetInstance();
+            contexto.Usuarios.Add(unUsuario);
+            contexto.SaveChanges();
         }
 
         public static Usuario ObtenerUsuario(int unIdUsuario)
         {
-            BdContexto ctx = BdContexto.GetInstance();
-            var usuarios = (from u in ctx.Usuarios
+            BdContexto contexto = BdContexto.GetInstance();
+            var usuarios = (from u in contexto.Usuarios
                             where u.UsuarioId == unIdUsuario
                             orderby u.Nombre
                             select u);
@@ -52,10 +52,10 @@ namespace TodoPagos.LogicaRepositorio
 
         public static Usuario ValidacionLogIn(String mail, String clave)
         {
-            BdContexto ctx = BdContexto.GetInstance();
+            BdContexto contexto = BdContexto.GetInstance();
             try
             {
-                var usuario = (from u in ctx.Usuarios
+                var usuario = (from u in contexto.Usuarios
                               // where u.Email == mail && u.Clave == clave
                                select u);
                 return usuario.First();

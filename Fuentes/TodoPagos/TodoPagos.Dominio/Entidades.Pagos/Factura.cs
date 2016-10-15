@@ -1,13 +1,16 @@
 ﻿using System;
 using static TodoPagos.Dominio.Enumerados.Enumerados;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace TodoPagos.Dominio.Entidades.Pagos
 {
+    [Table("Facturas")]
     public class Factura
     {
+        [Key]
+        [Column("ID")]
         public int FacturaId { get; set; }
-
-        public string NumeroFactura { get; set; }
 
         public DateTime FechaVencimiento { get; set; }
 
