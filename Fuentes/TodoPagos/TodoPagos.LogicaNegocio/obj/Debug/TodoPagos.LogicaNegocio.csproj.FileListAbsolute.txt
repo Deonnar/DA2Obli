@@ -1,0 +1,18 @@
+C:\Users\VBox\Desktop\DA2\Fuentes\TodoPagos\TodoPagos.LogicaNegocio\bin\Debug\TodoPagos.LogicaNegocio.dll
+C:\Users\VBox\Desktop\DA2\Fuentes\TodoPagos\TodoPagos.LogicaNegocio\bin\Debug\TodoPagos.LogicaNegocio.pdb
+C:\Users\VBox\Desktop\DA2\Fuentes\TodoPagos\TodoPagos.LogicaNegocio\obj\Debug\TodoPagos.LogicaNegocio.dll
+C:\Users\VBox\Desktop\DA2\Fuentes\TodoPagos\TodoPagos.LogicaNegocio\obj\Debug\TodoPagos.LogicaNegocio.pdb
+<<<<<<< HEAD
+C:\Users\VBox\Desktop\DA2\Fuentes\TodoPagos\TodoPagos.LogicaNegocio\obj\Debug\TodoPagos.LogicaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\VBox\Documents\DA2Obligatorio\Fuentes\TodoPagos\TodoPagos.LogicaNegocio\bin\Debug\TodoPagos.LogicaNegocio.dll
+C:\Users\VBox\Documents\DA2Obligatorio\Fuentes\TodoPagos\TodoPagos.LogicaNegocio\bin\Debug\TodoPagos.LogicaNegocio.pdb
+C:\Users\VBox\Documents\DA2Obligatorio\Fuentes\TodoPagos\TodoPagos.LogicaNegocio\obj\Debug\TodoPagos.LogicaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\VBox\Documents\DA2Obligatorio\Fuentes\TodoPagos\TodoPagos.LogicaNegocio\obj\Debug\TodoPagos.LogicaNegocio.dll
+C:\Users\VBox\Documents\DA2Obligatorio\Fuentes\TodoPagos\TodoPagos.LogicaNegocio\obj\Debug\TodoPagos.LogicaNegocio.pdb
+=======
+C:\Users\Emiliano\Documents\DA2Obligatorio\Fuentes\TodoPagos\TodoPagos.LogicaNegocio\bin\Debug\TodoPagos.LogicaNegocio.dll
+C:\Users\Emiliano\Documents\DA2Obligatorio\Fuentes\TodoPagos\TodoPagos.LogicaNegocio\bin\Debug\TodoPagos.LogicaNegocio.pdb
+C:\Users\Emiliano\Documents\DA2Obligatorio\Fuentes\TodoPagos\TodoPagos.LogicaNegocio\obj\Debug\TodoPagos.LogicaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\Emiliano\Documents\DA2Obligatorio\Fuentes\TodoPagos\TodoPagos.LogicaNegocio\obj\Debug\TodoPagos.LogicaNegocio.dll
+C:\Users\Emiliano\Documents\DA2Obligatorio\Fuentes\TodoPagos\TodoPagos.LogicaNegocio\obj\Debug\TodoPagos.LogicaNegocio.pdb
+>>>>>>> Pruebas
