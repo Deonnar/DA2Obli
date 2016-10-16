@@ -54,7 +54,7 @@ namespace TodoPagos.RestApi.Controllers
         {
             try
             {
-                //     RepositorioUsuarios.Modificar(id, usuario);
+               // RepositorioUsuarios.Modificar(id, usuario);
                 return Ok(usuario);
             }
             catch (Exception e)
