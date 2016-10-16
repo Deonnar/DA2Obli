@@ -13,6 +13,7 @@ namespace Tresana.Data.Repository
         private GenericRepository<User> userRepository;
         private GenericRepository<Task> taskRepository;
         private GenericRepository<Payment> paymentRepository;
+        private GenericRepository<Client> clientRepository;
 
         public UnitOfWork(TresanaContext tresanaContext)
         {
@@ -53,6 +54,18 @@ namespace Tresana.Data.Repository
                     this.paymentRepository = new GenericRepository<Payment>(context);
                 }
                 return paymentRepository;
+            }
+        }
+
+        public IRepository<Client> ClientRepository
+        {
+            get
+            {
+                if (this.clientRepository == null)
+                {
+                    this.clientRepository = new GenericRepository<Client>(context);
+                }
+                return clientRepository;
             }
         }
 

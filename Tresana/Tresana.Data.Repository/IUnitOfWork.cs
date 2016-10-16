@@ -8,6 +8,8 @@ namespace Tresana.Data.Repository
         IRepository<User> UserRepository { get; }
         IRepository<Task> TaskRepository { get; }
         IRepository<Payment> PaymentRepository { get; }
+        IRepository<Client> ClientRepository { get; }
+
         void Save();
     }
 }
