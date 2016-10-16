@@ -12,7 +12,7 @@ namespace TodoPagos.RestApi.Controllers
     [Authorize]
     public class ValuesController : ApiController
     {
-        // GET api/values
+       /* // GET api/values
         [HttpGet]
         public IEnumerable<Proveedor> Get()
         {
@@ -67,6 +67,6 @@ namespace TodoPagos.RestApi.Controllers
         public void Delete(int id)
         {
             // No se implementa
-        }
+        }*/
     }
 }

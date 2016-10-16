@@ -12,9 +12,7 @@ namespace TodoPagos.Repositorio
     {
         public static void Agregar(Usuario unUsuario)
         {
-            BdContexto ctx = BdContexto.GetInstance();
-            ctx.Usuarios.Add(unUsuario);
-            ctx.SaveChanges();
+         
         }
     }
 }

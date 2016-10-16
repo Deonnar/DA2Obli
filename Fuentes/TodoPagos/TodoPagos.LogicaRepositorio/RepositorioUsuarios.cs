@@ -16,15 +16,15 @@ namespace TodoPagos.LogicaRepositorio
         {
             
             BdContexto contexto = BdContexto.GetInstance();
-            Usuario usuario = contexto.Usuarios.Include("Usuarios").ToList().Find(u => u.UsuarioId == IdUsuario);
+          //  Usuario usuario = contexto.Usuarios.Include("Usuarios").ToList().Find(u => u.UsuarioId == IdUsuario);
             contexto.SaveChanges();
         }
 
         public static IEnumerable<Usuario> ObtenerUsuarios()
         {
-           // Usuario up = new Usuario();
-           // up.Nombre = "usuario 2";
-           // Agregar(up);
+           Usuario up = new Usuario();
+            up.Nombre = "usuario 2";
+          //  Agregar(up);
             BdContexto contexto = BdContexto.GetInstance();
             var usuarios = (from u in contexto.Usuarios
                             orderby u.Nombre
@@ -32,7 +32,7 @@ namespace TodoPagos.LogicaRepositorio
             return usuarios;
         }
 
-        public static void Agregar(Usuario unUsuario)
+        public static void AgregarUsuario(Usuario unUsuario)
         {
             BdContexto contexto = BdContexto.GetInstance();
             contexto.Usuarios.Add(unUsuario);

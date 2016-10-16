@@ -11,7 +11,7 @@ namespace TodoPagos.LogicaRepositorio
 {
     public class RepositorioProveedores
     {
-        public static void Agregar(int IdProveedor)
+       /* public static void Agregar(int IdProveedor)
         {
             BdContexto contexto = BdContexto.GetInstance();
             Proveedor proveedor = contexto.Proveedores.Include("Proveedores").ToList().Find(p => p.ProveedorId == IdProveedor);
@@ -45,6 +45,6 @@ namespace TodoPagos.LogicaRepositorio
                             orderby f.ProveedorId
                             select f);
             return facturas.First();
-        }
+        }*/
     }
 }

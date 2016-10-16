@@ -31,7 +31,7 @@ namespace TodoPagos.RestApi.Controllers
             {
                 return BadRequest(e.Message);
             }
-            return null;
+            
         }
         
         // POST api/<controller>
@@ -39,7 +39,7 @@ namespace TodoPagos.RestApi.Controllers
         {
             try
             {
-                //  RepositorioUsuarios.Agregar(usuario);
+                RepositorioUsuarios.AgregarUsuario(usuario);
                 return Ok();
             }
             catch (Exception e)

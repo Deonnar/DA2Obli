@@ -26,7 +26,7 @@ namespace TodoPagos.RestApi.Controllers
     public class AccountController : ApiController
     {
         // GET api/values
-        [HttpGet]
+      /*  [HttpGet]
         public IEnumerable<Factura> Get()
         {
             return RepositorioFacturas.ObtenerFacturas();
@@ -79,6 +79,6 @@ namespace TodoPagos.RestApi.Controllers
         public void Delete(int id)
         {
             // No se implementa
-        }
+        }*/
     }
 }

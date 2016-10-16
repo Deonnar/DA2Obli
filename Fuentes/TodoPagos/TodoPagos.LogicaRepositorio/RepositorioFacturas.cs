@@ -12,7 +12,7 @@ namespace TodoPagos.LogicaRepositorio
 {
     public class RepositorioFacturas
     {
-        public static void Agregar(int IdFactura)
+       /* public static void Agregar(int IdFactura)
         {
             BdContexto contexto = BdContexto.GetInstance();
             Factura usuario = contexto.Facturas.Include("Facturas").ToList().Find(f => f.FacturaId == IdFactura);
@@ -23,7 +23,7 @@ namespace TodoPagos.LogicaRepositorio
         {
             Factura fac = new Factura();
             fac.Monto = 11;
-            AgregarFactura(fac);
+         //   AgregarFactura(fac);
             BdContexto contexto = BdContexto.GetInstance();
             var facturas = (from f in contexto.Facturas
                             orderby f.FacturaId
@@ -46,6 +46,6 @@ namespace TodoPagos.LogicaRepositorio
                             orderby f.FacturaId
                             select f);
             return facturas.First();
-        }
+        }*/
     }
 }
