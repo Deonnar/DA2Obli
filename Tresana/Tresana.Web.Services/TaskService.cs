@@ -37,9 +37,7 @@ namespace Tresana.Web.Services
             {
                 return false;
             }
-        }
-
-       
+        }      
 
         public IEnumerable<Task> GetAllTasks()
         {

@@ -14,6 +14,8 @@ namespace Tresana.Data.Repository
         private GenericRepository<Task> taskRepository;
         private GenericRepository<Payment> paymentRepository;
         private GenericRepository<Client> clientRepository;
+        private GenericRepository<ProviderField> providerFieldRepository;
+
 
         public UnitOfWork(TresanaContext tresanaContext)
         {
@@ -66,6 +68,18 @@ namespace Tresana.Data.Repository
                     this.clientRepository = new GenericRepository<Client>(context);
                 }
                 return clientRepository;
+            }
+        }
+
+        public IRepository<ProviderField> ProviderFieldRepository
+        {
+            get
+            {
+                if (this.providerFieldRepository == null)
+                {
+                    this.providerFieldRepository = new GenericRepository<ProviderField>(context);
+                }
+                return providerFieldRepository;
             }
         }
 

@@ -9,7 +9,7 @@ namespace Tresana.Data.Repository
         IRepository<Task> TaskRepository { get; }
         IRepository<Payment> PaymentRepository { get; }
         IRepository<Client> ClientRepository { get; }
-
+        IRepository<ProviderField> ProviderFieldRepository { get; }
         void Save();
     }
 }
