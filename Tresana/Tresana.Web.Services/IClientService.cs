@@ -14,6 +14,5 @@ namespace Tresana.Web.Services
         int CreateClient(Client client);
         bool UpdateClient(int Id, Client client);
         bool DeleteClient(int clientId);
-
     }
 }

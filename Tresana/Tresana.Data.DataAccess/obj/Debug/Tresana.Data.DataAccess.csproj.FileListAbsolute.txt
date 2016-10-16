@@ -50,3 +50,4 @@ C:\Users\Emiliano\Documents\Todo_Pagos\Tresana\Tresana.Data.DataAccess\obj\Debug
 C:\Users\Emiliano\Documents\Todo_Pagos\Tresana\Tresana.Data.DataAccess\obj\Debug\Tresana.Data.DataAccess.dll
 C:\Users\Emiliano\Documents\Todo_Pagos\Tresana\Tresana.Data.DataAccess\obj\Debug\Tresana.Data.DataAccess.pdb
 C:\Users\Emiliano\Documents\Todo_Pagos\Tresana\Tresana.Data.DataAccess\obj\Debug\Tresana.Data.DataAccess.Migrations.a.resources
+C:\Users\Emiliano\Documents\Todo_Pagos\Tresana\Tresana.Data.DataAccess\obj\Debug\Tresana.Data.DataAccess.Migrations.ab.resources

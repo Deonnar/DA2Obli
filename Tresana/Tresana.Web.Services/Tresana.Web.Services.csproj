@@ -45,7 +45,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClientService.cs" />
     <Compile Include="DependencyResolver.cs" />
+    <Compile Include="IClientService.cs" />
     <Compile Include="IPaymentService.cs" />
     <Compile Include="ITaskService.cs" />
     <Compile Include="IUserService.cs" />
