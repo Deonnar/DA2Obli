@@ -184,6 +184,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\ClientController.cs" />
     <Compile Include="Controllers\PaymentsController.cs" />
+    <Compile Include="Controllers\ProviderController.cs" />
     <Compile Include="Controllers\ProviderFieldsController.cs" />
     <Compile Include="Controllers\TasksController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
