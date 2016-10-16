@@ -7,7 +7,7 @@ namespace TodoPagos.Repositorio
     public class UnitOfWork : IUnitOfWork
     {
         private ContextoTodoPagos contexto;
-        private Repository<Cajero> repositorioCajeros;
+        public Repository<Cajero> repositorioCajeros;
 
         public UnitOfWork()
         {

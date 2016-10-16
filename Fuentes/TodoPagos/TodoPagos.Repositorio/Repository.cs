@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TodoPagos.Repositorio.Contexto;
+using System.Linq.Expressions;
+
 
 namespace TodoPagos.Repositorio
 {
@@ -12,6 +14,35 @@ namespace TodoPagos.Repositorio
     {
         internal ContextoTodoPagos contexto;
         internal DbSet<T> dbSet;
+
+
+        public IEnumerable<T> Get(Expression<Func<T, bool>> filtro, Func<IQueryable<T>, IOrderedQueryable<T>> ordenarPor, string propiedades)
+        {
+            IQueryable<T> query = dbSet;
+
+            if (filtro != null)
+            {
+                query = query.Where(filtro);
+            }
+
+            foreach (var includeProperty in propiedades.Split
+                (new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+            {
+                query = query.Include(includeProperty);
+            }
+
+            if (ordenarPor != null)
+            {
+                return ordenarPor(query).ToList();
+            }
+            else
+            {
+                return query.ToList();
+            }
+
+        }
+
+
 
         public Repository(ContextoTodoPagos contexto)
         {
