@@ -10,6 +10,7 @@ namespace Tresana.Data.Repository
         IRepository<Payment> PaymentRepository { get; }
         IRepository<Client> ClientRepository { get; }
         IRepository<ProviderField> ProviderFieldRepository { get; }
+        IRepository<Provider> ProviderRepository { get; }
         void Save();
     }
 }

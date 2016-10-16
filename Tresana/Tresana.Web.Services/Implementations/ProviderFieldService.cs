@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Tresana.Data.Entities;
 using Tresana.Data.Repository;
+using Tresana.Web.Services.Interfaces;
 
 namespace Tresana.Web.Services
 {

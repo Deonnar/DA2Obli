@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Tresana.Data.Entities
 {
-    class ProviderField
+    public class ProviderField
     {
+        public int ProviderFieldId { get; set; }
+        public Provider Provider { get; set; }
+        public string FieldName { get; set; }
     }
 }

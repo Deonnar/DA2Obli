@@ -11,6 +11,6 @@ namespace Tresana.Data.DataAccess
         public virtual DbSet<Payment> Payments { get; set; }
         public virtual DbSet<Client> Clients { get; set; }
         public virtual DbSet<ProviderField> ProviderFields { get; set; }
-
+        public virtual DbSet<Provider> Provider { get; set; }
     }
 }

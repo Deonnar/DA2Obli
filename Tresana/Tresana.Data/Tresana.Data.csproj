@@ -67,6 +67,8 @@
   <ItemGroup>
     <Compile Include="Entities\Client.cs" />
     <Compile Include="Entities\Payment.cs" />
+    <Compile Include="Entities\Provider.cs" />
+    <Compile Include="Entities\ProviderField.cs" />
     <Compile Include="Entities\Task.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
