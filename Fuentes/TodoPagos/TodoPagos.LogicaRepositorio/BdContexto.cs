@@ -14,7 +14,8 @@ namespace TodoPagos.Dominio
         private static BdContexto contexto;
         public DbSet<TodoPagos.Dominio.Entidades.Usuarios.Usuario> Usuarios { get; set; }
         public DbSet<TodoPagos.Dominio.Entidades.Pagos.Factura> Facturas { get; set; }
-
+      
+        //  public DbSet<TodoPagos.Dominio.Entidades.Proveedores.Proveedor> Proveedores { get; set; }
 
         public static BdContexto GetInstance()
         {

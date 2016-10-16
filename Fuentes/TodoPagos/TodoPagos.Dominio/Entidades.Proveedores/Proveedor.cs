@@ -10,6 +10,11 @@ namespace TodoPagos.Dominio.Entidades.Proveedores
 {
     public class Proveedor
     {
-        
+        [Key]
+        [Column("ID")]
+        public int ProveedorId { get; set; }
+
+        public String NombreProveedor { get; set; }
+
     }
 }
