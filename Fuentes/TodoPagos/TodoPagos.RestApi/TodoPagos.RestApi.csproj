@@ -328,6 +328,17 @@
       <Project>{e6a5179c-27d8-45ca-8010-6a2da091247a}</Project>
       <Name>TodoPagos.LogicaRepositorio</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TodoPagos.Repositorio\TodoPagos.Repositorio.csproj">
+      <Project>{bb3c608f-9d0e-4529-8385-da029ce141ee}</Project>
+      <Name>TodoPagos.Repositorio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TodoPagos.Servicios\TodoPagos.Servicios.csproj">
+      <Project>{60d03b96-9250-4e9c-9230-21567e84dea5}</Project>
+      <Name>TodoPagos.Servicios</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -12,6 +12,13 @@ namespace TodoPagos.Servicios
     public class ServiciosUsuario: IServiciosUsuarios
     {
         private readonly IUnitOfWork unitOfWork;
+        /// <summary>
+        /// ver
+        /// </summary>
+        public ServiciosUsuario()
+        {
+            this.unitOfWork = new UnitOfWork();
+        }
 
         public ServiciosUsuario(IUnitOfWork unit)
         {

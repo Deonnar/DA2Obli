@@ -7,16 +7,32 @@ using System.Web.Http;
 using System.Net.Http;
 using TodoPagos.Dominio.Entidades.Usuarios;
 using TodoPagos.LogicaRepositorio;
+using TodoPagos.Repositorio.Contexto;
+using TodoPagos.Repositorio;
+using TodoPagos.Servicios;
 
 namespace TodoPagos.RestApi.Controllers
 {
     public class UsuariosController : ApiController
     {
+        private readonly IServiciosUsuarios repositorioUsuarios;
+
+        public UsuariosController(){
+            repositorioUsuarios = new ServiciosUsuario();
+        }
+        public UsuariosController(IServiciosUsuarios u)
+        {
+            this.repositorioUsuarios = u;
+        }
+        
         // GET api/values
         [HttpGet]
         public IEnumerable<Usuario> Get()
         {
-            return RepositorioUsuarios.ObtenerUsuarios();
+
+            IEnumerable<Usuario> listaUsuarios = repositorioUsuarios.ObtenerUsuarios();
+
+            return listaUsuarios;
         }
 
         // GET api/<controller>/11
@@ -56,6 +72,26 @@ namespace TodoPagos.RestApi.Controllers
             {
                // RepositorioUsuarios.Modificar(id, usuario);
                 return Ok(usuario);
+
+                /* if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            if (id != user.Id)
+            {
+                return BadRequest();
+            }
+
+            if(!userService.UpdateUser(id, user))
+            {
+                return NotFound();
+            }
+            return StatusCode(HttpStatusCode.NoContent);
+                
+                
+                
+                */
             }
             catch (Exception e)
             {
@@ -66,7 +102,8 @@ namespace TodoPagos.RestApi.Controllers
         // DELETE api/<controller>/11
         public void Delete(int id)
         {
-            // No se implementa
+            repositorioUsuarios.BorrarUsuario(id);
+            
         }
     }
 }

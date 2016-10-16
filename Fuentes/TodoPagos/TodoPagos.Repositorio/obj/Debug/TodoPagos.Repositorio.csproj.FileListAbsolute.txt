@@ -37,3 +37,19 @@ C:\Users\Emiliano\Documents\DA2Obligatorio\Fuentes\TodoPagos\TodoPagos.Repositor
 C:\Users\Emiliano\Documents\DA2Obligatorio\Fuentes\TodoPagos\TodoPagos.Repositorio\obj\Debug\TodoPagos.Repositorio.dll
 C:\Users\Emiliano\Documents\DA2Obligatorio\Fuentes\TodoPagos\TodoPagos.Repositorio\obj\Debug\TodoPagos.Repositorio.pdb
 >>>>>>> Pruebas
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Repositorio\obj\Debug\TodoPagos.Repositorio.csprojResolveAssemblyReference.cache
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Repositorio\obj\Debug\TodoPagos.Repositorio.dll
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Repositorio\obj\Debug\TodoPagos.Repositorio.pdb
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Repositorio\bin\Debug\TodoPagos.Repositorio.dll.config
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Repositorio\bin\Debug\TodoPagos.Repositorio.dll
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Repositorio\bin\Debug\TodoPagos.Repositorio.pdb
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Repositorio\bin\Debug\EntityFramework.dll
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Repositorio\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Repositorio\bin\Debug\TodoPagos.Dominio.dll
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Repositorio\bin\Debug\TodoPagos.LogicaNegocio.dll
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Repositorio\bin\Debug\TodoPagos.Dominio.pdb
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Repositorio\bin\Debug\TodoPagos.LogicaNegocio.pdb
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Repositorio\bin\Debug\EntityFramework.xml
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Repositorio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Repositorio\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Repositorio\bin\Debug\es\EntityFramework.SqlServer.resources.dll

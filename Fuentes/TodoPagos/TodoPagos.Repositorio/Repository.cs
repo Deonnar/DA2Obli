@@ -15,33 +15,11 @@ namespace TodoPagos.Repositorio
         internal ContextoTodoPagos contexto;
         internal DbSet<T> dbSet;
 
-
-        public IEnumerable<T> Get(Expression<Func<T, bool>> filtro, Func<IQueryable<T>, IOrderedQueryable<T>> ordenarPor, string propiedades)
+        public Repository()
         {
-            IQueryable<T> query = dbSet;
-
-            if (filtro != null)
-            {
-                query = query.Where(filtro);
-            }
-
-            foreach (var includeProperty in propiedades.Split
-                (new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
-            {
-                query = query.Include(includeProperty);
-            }
-
-            if (ordenarPor != null)
-            {
-                return ordenarPor(query).ToList();
-            }
-            else
-            {
-                return query.ToList();
-            }
-
+            this.contexto = new ContextoTodoPagos();
+            this.dbSet = contexto.Set<T>();
         }
-
 
 
         public Repository(ContextoTodoPagos contexto)
@@ -49,6 +27,34 @@ namespace TodoPagos.Repositorio
             this.contexto = contexto;
             this.dbSet = contexto.Set<T>();
         }
+
+        public IEnumerable<T> ObtenerLista(Expression<Func<T, bool>> filtro, Func<IQueryable<T>, IOrderedQueryable<T>> ordenarPor, string propiedades)
+        {
+            IQueryable<T> query = dbSet;
+
+            /*  if (filtro != null)
+              {
+                  query = query.Where(filtro);
+              }
+
+              foreach (var includeProperty in propiedades.Split
+                  (new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+              {
+                  query = query.Include(includeProperty);
+              }
+
+              if (ordenarPor != null)
+              {
+                  return ordenarPor(query).ToList();
+              }
+              else
+              {
+                  return query.ToList();
+              }
+              */
+            return null;
+        }
+
 
         public void Actualizar(T t)
         {

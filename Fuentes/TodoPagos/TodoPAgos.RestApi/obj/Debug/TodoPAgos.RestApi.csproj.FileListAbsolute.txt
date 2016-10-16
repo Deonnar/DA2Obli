@@ -115,3 +115,7 @@ C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPAgos.RestApi\bin\e
 C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPAgos.RestApi\obj\Debug\TodoPAgos.RestApi.csprojResolveAssemblyReference.cache
 C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPAgos.RestApi\obj\Debug\TodoPAgos.RestApi.dll
 C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPAgos.RestApi\obj\Debug\TodoPAgos.RestApi.pdb
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPAgos.RestApi\bin\TodoPagos.Repositorio.dll
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPAgos.RestApi\bin\TodoPagos.Repositorio.pdb
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPAgos.RestApi\bin\TodoPagos.Servicios.dll
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPAgos.RestApi\bin\TodoPagos.Servicios.pdb

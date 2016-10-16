@@ -8,6 +8,21 @@ namespace TodoPagos.Repositorio
     {
         private ContextoTodoPagos contexto;
         public Repository<Cajero> repositorioCajeros;
+        private Repository<Usuario> repositorioUsuarios;
+
+        //constructor
+        public IRepository<Usuario> RepositorioUsuario
+        {
+            get
+            {
+
+                if (this.repositorioUsuarios == null)
+                {
+                    this.repositorioUsuarios = new Repository<Usuario>(contexto);
+                }
+                return repositorioUsuarios;
+            }
+        }
 
         public UnitOfWork()
         {

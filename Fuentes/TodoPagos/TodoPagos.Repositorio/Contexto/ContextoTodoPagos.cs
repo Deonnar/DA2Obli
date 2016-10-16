@@ -6,7 +6,8 @@ namespace TodoPagos.Repositorio.Contexto
 {
     public class ContextoTodoPagos : DbContext
     {
-        public DbSet<Cajero> Cajeros { get; set; }
-        public DbSet<Administrador> Administradores { get; set;}
+        public ContextoTodoPagos() : base("name=BdContexto") { }
+                                       // public DbSet<Cajero> Cajeros { get; set; }
+        public virtual DbSet<Usuario> Usuarios { get; set;}
     }
 }

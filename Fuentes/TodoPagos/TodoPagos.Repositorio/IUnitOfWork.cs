@@ -9,6 +9,7 @@ namespace TodoPagos.Repositorio
 {
     public interface IUnitOfWork : IDisposable
     {
+        IRepository<Usuario> RepositorioUsuario { get; }
         void Save();
     }
 }

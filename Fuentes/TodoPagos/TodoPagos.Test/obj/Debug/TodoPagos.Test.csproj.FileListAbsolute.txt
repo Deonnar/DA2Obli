@@ -9,3 +9,21 @@ C:\Users\VBox\Desktop\DA2\Fuentes\TodoPagos\TodoPagos.Test\obj\Debug\TodoPagos.T
 =======
 C:\Users\Emiliano\Documents\DA2Obligatorio\Fuentes\TodoPagos\TodoPagos.Test\obj\Debug\TodoPagos.Test.csprojResolveAssemblyReference.cache
 >>>>>>> Pruebas
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Test\bin\Debug\TodoPagos.Test.dll
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Test\bin\Debug\TodoPagos.Test.pdb
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Test\bin\Debug\Castle.Core.dll
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Test\bin\Debug\Moq.dll
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Test\bin\Debug\TodoPagos.Dominio.dll
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Test\bin\Debug\TodoPagos.Repositorio.dll
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Test\bin\Debug\TodoPagos.Servicios.dll
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Test\bin\Debug\EntityFramework.dll
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Test\bin\Debug\TodoPagos.Dominio.pdb
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Test\bin\Debug\TodoPagos.Repositorio.pdb
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Test\bin\Debug\TodoPagos.Servicios.pdb
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Test\bin\Debug\Castle.Core.xml
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Test\bin\Debug\Moq.xml
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Test\bin\Debug\EntityFramework.xml
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Test\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Test\obj\Debug\TodoPagos.Test.csprojResolveAssemblyReference.cache
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Test\obj\Debug\TodoPagos.Test.dll
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Test\obj\Debug\TodoPagos.Test.pdb

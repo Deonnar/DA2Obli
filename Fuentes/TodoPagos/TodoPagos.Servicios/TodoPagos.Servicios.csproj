@@ -49,6 +49,10 @@
       <Project>{0acebc60-0092-4ad6-84ad-fa6327c5c300}</Project>
       <Name>TodoPagos.Dominio</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TodoPagos.Repositorio\TodoPagos.Repositorio.csproj">
+      <Project>{bb3c608f-9d0e-4529-8385-da029ce141ee}</Project>
+      <Name>TodoPagos.Repositorio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
