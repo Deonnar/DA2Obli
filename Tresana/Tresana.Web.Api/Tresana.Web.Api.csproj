@@ -184,6 +184,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\ClientController.cs" />
     <Compile Include="Controllers\PaymentsController.cs" />
+    <Compile Include="Controllers\ProviderFieldsController.cs" />
     <Compile Include="Controllers\TasksController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Global.asax.cs">
@@ -214,6 +215,7 @@
     <Folder Include="Models\" />
     <Folder Include="Views\Client\" />
     <Folder Include="Views\Payment\" />
+    <Folder Include="Views\ProviderFields\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Tresana.Data\Tresana.Data.csproj">

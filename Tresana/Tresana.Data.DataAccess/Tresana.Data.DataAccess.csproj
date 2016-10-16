@@ -73,6 +73,10 @@
     <Compile Include="Migrations\201610161742307_ab.Designer.cs">
       <DependentUpon>201610161742307_ab.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201610162006163_abc.cs" />
+    <Compile Include="Migrations\201610162006163_abc.Designer.cs">
+      <DependentUpon>201610162006163_abc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TresanaContext.cs" />
@@ -107,6 +111,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201610161742307_ab.resx">
       <DependentUpon>201610161742307_ab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610162006163_abc.resx">
+      <DependentUpon>201610162006163_abc.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
