@@ -29,14 +29,14 @@ namespace Tresana.Web.Api.Controllers
         }
 
         // GET: api/Users
-        public IHttpActionResult GetUsers()
+        public IHttpActionResult GetFieldProviders()
         {
             IEnumerable<ProviderField> fields = providerService.GetAllProviderFields();
             return Ok(fields);
         }
         // PUT: api/Users/5
         [ResponseType(typeof(void))]
-        public IHttpActionResult PutUser(int id, ProviderField field)
+        public IHttpActionResult PutFieldProvider(int id, ProviderField field)
         {
             if (!ModelState.IsValid)
             {
@@ -57,7 +57,7 @@ namespace Tresana.Web.Api.Controllers
 
         // POST: api/Users
         [ResponseType(typeof(ProviderField))]
-        public IHttpActionResult PostUser(ProviderField field)
+        public IHttpActionResult PostProviderField(ProviderField field)
         {
             if (!ModelState.IsValid)
             {
@@ -71,7 +71,7 @@ namespace Tresana.Web.Api.Controllers
 
         // DELETE: api/Users/5
         [ResponseType(typeof(ProviderField))]
-        public IHttpActionResult DeleteUser(int id)
+        public IHttpActionResult DeleteProviderField(int id)
         {
             if (providerService.DeleteProviderField(id))
             {

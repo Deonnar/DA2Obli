@@ -8,6 +8,7 @@ using System.ComponentModel.DataAnnotations;
  
 namespace TodoPagos.Dominio.Entidades.Proveedores
 {
+    [Table("Proveedores")]
     public class Proveedor
     {
         [Key]

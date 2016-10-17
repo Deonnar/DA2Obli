@@ -24,7 +24,7 @@ namespace TodoPagos.LogicaRepositorio
         {
            Usuario up = new Usuario();
             up.Nombre = "usuario 2";
-          //  Agregar(up);
+            AgregarUsuario(up);
             BdContexto contexto = BdContexto.GetInstance();
             var usuarios = (from u in contexto.Usuarios
                             orderby u.Nombre

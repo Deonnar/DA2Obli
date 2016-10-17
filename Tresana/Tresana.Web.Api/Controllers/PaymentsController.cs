@@ -15,19 +15,14 @@ namespace Tresana.Web.Api.Controllers
 {
     public class PaymentsController : ApiController
     {
-        private readonly IPaymentService paymentService;
+        private readonly IPaymentService paymentService = new PaymentService();
 
 
-      //  public PaymentsController()
-       // {
+        public PaymentsController()
+        {
             //    userService = new UserService();
           //  paymentService = new PaymentService();
 
-        //}
-
-        public PaymentsController(IPaymentService paymentService)
-        {
-            this.paymentService = paymentService;
         }
 
         // GET: api/Users

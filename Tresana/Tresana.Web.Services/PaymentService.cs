@@ -10,12 +10,14 @@ namespace Tresana.Web.Services
 {
     public class PaymentService : IPaymentService
     {
-        private readonly IUnitOfWork unitOfWork;
+        private readonly IUnitOfWork unitOfWork = new UnitOfWork();
 
-        public PaymentService(IUnitOfWork unitOfWork)
-        {
-            this.unitOfWork = unitOfWork;
-        }
+        public PaymentService(){}
+
+        //  public PaymentService(IUnitOfWork unitOfWork)
+        // {
+        //  this.unitOfWork = unitOfWork;
+        // }
 
         public int CreatePayment(Payment payment)
         {

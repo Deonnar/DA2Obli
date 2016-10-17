@@ -18,18 +18,9 @@ namespace Tresana.Web.Api.Controllers
         private readonly IPaymentService paymentService;
 
 
-        //  public PaymentsController()
-        // {
-        //    userService = new UserService();
-        //  paymentService = new PaymentService();
+          public ClientController() { }
 
-        //}
-
-        public ClientController(IPaymentService paymentService)
-        {
-            this.paymentService = paymentService;
-        }
-
+     
         // GET: api/Users
         public IHttpActionResult GetPayments()
         {

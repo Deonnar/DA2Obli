@@ -9,7 +9,7 @@ namespace TodoPagos.Servicios
     public interface IServiciosUsuarios
     {
         Usuario ObtenerUsuario(int IdUsuario);
-        IEnumerable<Usuario> ObtenerUsuarios();
+       // IEnumerable<Usuario> ObtenerUsuarios();
         int AgregarUsuario(Usuario usuario);
         bool ModificarUsuario(int IdUsuario, Usuario usuario);
         bool BorrarUsuario(int IdUsuario);

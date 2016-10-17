@@ -25,11 +25,14 @@ namespace TodoPagos.Servicios
             this.unitOfWork = unit;
         }
         public Usuario ObtenerUsuario(int IdUsuario) {
+            Usuario u = new Usuario();
+            u.Nombre = "Juan";
+            AgregarUsuario(u);
             return unitOfWork.RepositorioUsuario.Obtener(IdUsuario);
         }
-        public IEnumerable<Usuario> ObtenerUsuarios() {
+       /* public IEnumerable<Usuario> ObtenerUsuarios() {
             return unitOfWork.RepositorioUsuario.ObtenerLista(null, null, "");
-        }
+        }*/
 
         public int AgregarUsuario(Usuario usuario) {
             unitOfWork.RepositorioUsuario.Agregar(usuario);

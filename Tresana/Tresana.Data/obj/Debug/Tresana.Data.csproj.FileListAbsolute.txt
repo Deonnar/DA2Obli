@@ -54,3 +54,4 @@ C:\Users\Emiliano\Documents\Todo_Pagos\Tresana\Tresana.Data\bin\Debug\Microsoft.
 C:\Users\Emiliano\Documents\Todo_Pagos\Tresana\Tresana.Data\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
 C:\Users\Emiliano\Documents\Todo_Pagos\Tresana\Tresana.Data\obj\Debug\Tresana.Data.dll
 C:\Users\Emiliano\Documents\Todo_Pagos\Tresana\Tresana.Data\obj\Debug\Tresana.Data.pdb
+C:\Users\Emiliano\Documents\Todo_Pagos\Tresana\Tresana.Data\obj\Debug\Tresana.Data.csprojResolveAssemblyReference.cache

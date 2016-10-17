@@ -9,30 +9,30 @@ namespace TodoPagos.Repositorio.Entidades.Pagos
 {
     public class RepositoryPagos
     {
-        private Repository<Factura> repositorio;
+       /* private Repository<Pago> repositorio;
 
         public RepositoryPagos()
         {
         }
 
-        public void AgregarFactura(Factura factura)
+        public void AgregarPago(Pago pago)
         {
-            repositorio.Agregar(factura);
+            repositorio.Agregar(pago);
         }
 
-        public Factura ObtenerFactura(Factura factura)
+        public Pago ObtenerPago(Pago pago)
         {
-            return repositorio.Obtener(factura);
+            return repositorio.Obtener(pago);
         }
 
-        void BorrarFactura(Factura factura)
+        void BorrarPago(Pago pago)
         {
-            repositorio.Borrar(factura);
+            repositorio.Borrar(pago);
         }
 
-        void ActualizarFactura(Factura factura)
+        void ActualizarPago(Pago pago)
         {
-            repositorio.Actualizar(factura);
-        }
+            repositorio.Actualizar(pago);
+        }*/
     }
 }

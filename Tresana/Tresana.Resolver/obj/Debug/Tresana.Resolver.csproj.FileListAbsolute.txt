@@ -60,3 +60,4 @@ C:\Users\Emiliano\Documents\Todo_Pagos\Tresana\Tresana.Resolver\bin\Debug\System
 C:\Users\Emiliano\Documents\Todo_Pagos\Tresana\Tresana.Resolver\bin\Debug\System.Web.Http.xml
 C:\Users\Emiliano\Documents\Todo_Pagos\Tresana\Tresana.Resolver\obj\Debug\Tresana.Resolver.dll
 C:\Users\Emiliano\Documents\Todo_Pagos\Tresana\Tresana.Resolver\obj\Debug\Tresana.Resolver.pdb
+C:\Users\Emiliano\Documents\Todo_Pagos\Tresana\Tresana.Resolver\obj\Debug\Tresana.Resolver.csprojResolveAssemblyReference.cache

@@ -32,7 +32,7 @@ namespace TodoPagos.Repositorio
         {
             IQueryable<T> query = dbSet;
 
-            /*  if (filtro != null)
+              if (filtro != null)
               {
                   query = query.Where(filtro);
               }
@@ -51,8 +51,8 @@ namespace TodoPagos.Repositorio
               {
                   return query.ToList();
               }
-              */
-            return null;
+              
+            //return null;
         }
 
 

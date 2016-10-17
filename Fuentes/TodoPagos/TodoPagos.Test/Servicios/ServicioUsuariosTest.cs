@@ -23,7 +23,7 @@ namespace TodoPagos.Test.Servicios
             IServiciosUsuarios serviciosUsuarios  = new ServiciosUsuario(mockUnitOfWork.Object);
 
             //Act
-            IEnumerable<Usuario> returnedUsers = serviciosUsuarios.ObtenerUsuarios();
+         //   IEnumerable<Usuario> returnedUsers = serviciosUsuarios.ObtenerUsuarios();
 
             //Assert
             mockUnitOfWork.VerifyAll();

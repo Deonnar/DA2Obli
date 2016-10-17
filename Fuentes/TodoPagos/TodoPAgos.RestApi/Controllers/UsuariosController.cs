@@ -15,14 +15,14 @@ namespace TodoPagos.RestApi.Controllers
 {
     public class UsuariosController : ApiController
     {
-        private readonly IServiciosUsuarios repositorioUsuarios;
+       // private readonly IServiciosUsuarios repositorioUsuarios;
 
         public UsuariosController(){
-            repositorioUsuarios = new ServiciosUsuario();
+          //  repositorioUsuarios = new ServiciosUsuario();
         }
         public UsuariosController(IServiciosUsuarios u)
         {
-            this.repositorioUsuarios = u;
+          //  this.repositorioUsuarios = u;
         }
         
         // GET api/values
@@ -30,7 +30,7 @@ namespace TodoPagos.RestApi.Controllers
         public IEnumerable<Usuario> Get()
         {
 
-            IEnumerable<Usuario> listaUsuarios = repositorioUsuarios.ObtenerUsuarios();
+            IEnumerable<Usuario> listaUsuarios = RepositorioUsuarios.ObtenerUsuarios();
 
             return listaUsuarios;
         }
@@ -102,7 +102,7 @@ namespace TodoPagos.RestApi.Controllers
         // DELETE api/<controller>/11
         public void Delete(int id)
         {
-            repositorioUsuarios.BorrarUsuario(id);
+            //repositorioUsuarios.BorrarUsuario(id);
             
         }
     }

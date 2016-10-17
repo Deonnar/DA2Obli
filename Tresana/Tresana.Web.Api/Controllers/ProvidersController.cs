@@ -30,7 +30,7 @@ namespace Tresana.Web.Api.Controllers
         }
 
         // GET: api/Users
-        public IHttpActionResult GetUsers()
+        public IHttpActionResult GetProviders()
         {
             IEnumerable<Provider> providers = providerService.GetAllProviders();
             return Ok(providers);
@@ -57,7 +57,7 @@ namespace Tresana.Web.Api.Controllers
         }
 
         // POST: api/Users
-        [ResponseType(typeof(User))]
+        [ResponseType(typeof(Provider))]
         public IHttpActionResult PostUser(Provider user)
         {
             if (!ModelState.IsValid)
@@ -71,7 +71,7 @@ namespace Tresana.Web.Api.Controllers
         }
 
         // DELETE: api/Users/5
-        [ResponseType(typeof(User))]
+        [ResponseType(typeof(Provider))]
         public IHttpActionResult DeleteUser(int id)
         {
             if (providerService.DeleteProvider(id))

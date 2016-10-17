@@ -19,6 +19,5 @@ namespace TodoPagos.Dominio.Entidades.Usuarios
         public string Apellido { get; set; }
         public string Cedula { get; set; }
         public string Direccion { get; set; }
-        public Boolean EstaBorrado { get; set; }
     }
 }
