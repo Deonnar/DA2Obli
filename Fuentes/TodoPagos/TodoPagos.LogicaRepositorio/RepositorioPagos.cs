@@ -21,8 +21,6 @@ namespace TodoPagos.LogicaRepositorio
 
         public static IEnumerable<Pago> ObtenerPagos()
         {
-            Proveedor p = new Proveedor();
-            p.NombreProveedor = 
             Pago up = new Pago();
             up.Saldo = 30;
             up.EstaPaga = false;
