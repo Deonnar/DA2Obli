@@ -17,7 +17,7 @@ namespace TodoPagos.Servicios
         /// </summary>
         public ServiciosUsuario()
         {
-            this.unitOfWork = new UnitOfWork();
+        //    this.unitOfWork = new UnitOfWork();
         }
 
         public ServiciosUsuario(IUnitOfWork unit)

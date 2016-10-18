@@ -27,3 +27,6 @@ C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Test\bin\Debu
 C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Test\obj\Debug\TodoPagos.Test.csprojResolveAssemblyReference.cache
 C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Test\obj\Debug\TodoPagos.Test.dll
 C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Test\obj\Debug\TodoPagos.Test.pdb
+C:\Users\Usuario\Desktop\TodoPagos\Fuentes\TodoPagos\TodoPagos.Test\obj\Debug\TodoPagos.Test.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Desktop\TodoPagos\Fuentes\TodoPagos\TodoPagos.Test\obj\Debug\TodoPagos.Test.dll
+C:\Users\Usuario\Desktop\TodoPagos\Fuentes\TodoPagos\TodoPagos.Test\obj\Debug\TodoPagos.Test.pdb

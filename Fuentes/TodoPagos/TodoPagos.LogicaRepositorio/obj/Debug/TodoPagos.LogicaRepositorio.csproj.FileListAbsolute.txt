@@ -14,3 +14,6 @@ C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.LogicaReposit
 C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\obj\Debug\TodoPagos.LogicaRepositorio.pdb
 C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\bin\Debug\es\EntityFramework.resources.dll
 C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\bin\Debug\es\EntityFramework.SqlServer.resources.dll
+C:\Users\Usuario\Desktop\TodoPagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\obj\Debug\TodoPagos.LogicaRepositorio.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Desktop\TodoPagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\obj\Debug\TodoPagos.LogicaRepositorio.dll
+C:\Users\Usuario\Desktop\TodoPagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\obj\Debug\TodoPagos.LogicaRepositorio.pdb

@@ -10,3 +10,14 @@ C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Dominio\bin\D
 C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Dominio\bin\Debug\es\EntityFramework.resources.dll
 C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Dominio\bin\Debug\es\EntityFramework.SqlServer.resources.dll
 C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Dominio\obj\Debug\TodoPagos.Dominio.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Desktop\TodoPagos\Fuentes\TodoPagos\TodoPagos.Dominio\bin\Debug\TodoPagos.Dominio.dll.config
+C:\Users\Usuario\Desktop\TodoPagos\Fuentes\TodoPagos\TodoPagos.Dominio\bin\Debug\TodoPagos.Dominio.dll
+C:\Users\Usuario\Desktop\TodoPagos\Fuentes\TodoPagos\TodoPagos.Dominio\bin\Debug\TodoPagos.Dominio.pdb
+C:\Users\Usuario\Desktop\TodoPagos\Fuentes\TodoPagos\TodoPagos.Dominio\bin\Debug\EntityFramework.dll
+C:\Users\Usuario\Desktop\TodoPagos\Fuentes\TodoPagos\TodoPagos.Dominio\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Usuario\Desktop\TodoPagos\Fuentes\TodoPagos\TodoPagos.Dominio\bin\Debug\EntityFramework.xml
+C:\Users\Usuario\Desktop\TodoPagos\Fuentes\TodoPagos\TodoPagos.Dominio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Usuario\Desktop\TodoPagos\Fuentes\TodoPagos\TodoPagos.Dominio\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\Usuario\Desktop\TodoPagos\Fuentes\TodoPagos\TodoPagos.Dominio\bin\Debug\es\EntityFramework.SqlServer.resources.dll
+C:\Users\Usuario\Desktop\TodoPagos\Fuentes\TodoPagos\TodoPagos.Dominio\obj\Debug\TodoPagos.Dominio.dll
+C:\Users\Usuario\Desktop\TodoPagos\Fuentes\TodoPagos\TodoPagos.Dominio\obj\Debug\TodoPagos.Dominio.pdb

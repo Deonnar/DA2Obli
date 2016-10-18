@@ -21,3 +21,8 @@ C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.LogicaNegocio
 C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.LogicaNegocio\obj\Debug\TodoPagos.LogicaNegocio.csprojResolveAssemblyReference.cache
 C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.LogicaNegocio\obj\Debug\TodoPagos.LogicaNegocio.dll
 C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.LogicaNegocio\obj\Debug\TodoPagos.LogicaNegocio.pdb
+C:\Users\Usuario\Desktop\TodoPagos\Fuentes\TodoPagos\TodoPagos.LogicaNegocio\bin\Debug\TodoPagos.LogicaNegocio.dll
+C:\Users\Usuario\Desktop\TodoPagos\Fuentes\TodoPagos\TodoPagos.LogicaNegocio\bin\Debug\TodoPagos.LogicaNegocio.pdb
+C:\Users\Usuario\Desktop\TodoPagos\Fuentes\TodoPagos\TodoPagos.LogicaNegocio\obj\Debug\TodoPagos.LogicaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Desktop\TodoPagos\Fuentes\TodoPagos\TodoPagos.LogicaNegocio\obj\Debug\TodoPagos.LogicaNegocio.dll
+C:\Users\Usuario\Desktop\TodoPagos\Fuentes\TodoPagos\TodoPagos.LogicaNegocio\obj\Debug\TodoPagos.LogicaNegocio.pdb

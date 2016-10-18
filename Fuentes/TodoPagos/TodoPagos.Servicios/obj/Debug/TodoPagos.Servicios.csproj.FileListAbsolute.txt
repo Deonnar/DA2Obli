@@ -10,3 +10,6 @@ C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Servicios\bin
 C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Servicios\bin\Debug\es\EntityFramework.resources.dll
 C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Servicios\obj\Debug\TodoPagos.Servicios.dll
 C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos.Servicios\obj\Debug\TodoPagos.Servicios.pdb
+C:\Users\Usuario\Desktop\TodoPagos\Fuentes\TodoPagos\TodoPagos.Servicios\obj\Debug\TodoPagos.Servicios.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Desktop\TodoPagos\Fuentes\TodoPagos\TodoPagos.Servicios\obj\Debug\TodoPagos.Servicios.dll
+C:\Users\Usuario\Desktop\TodoPagos\Fuentes\TodoPagos\TodoPagos.Servicios\obj\Debug\TodoPagos.Servicios.pdb
