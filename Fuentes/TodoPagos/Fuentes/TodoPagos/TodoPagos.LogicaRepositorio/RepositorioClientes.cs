@@ -56,5 +56,18 @@ namespace TodoPagos.LogicaRepositorio
             Agregar(cliente);
 
         }
+
+        public static void Modificar(int id, Cliente cliente)
+        {
+            BdContexto contexto = BdContexto.GetInstance();
+            Cliente aModificar = contexto.Clientes.Single(u => u.ClienteId == id);
+         
+            aModificar.Nombre = cliente.Nombre;
+            aModificar.Apellido = cliente.Apellido;
+            aModificar.Direccion = cliente.Direccion;
+            aModificar.Email = cliente.Email;
+            aModificar.Telefono = cliente.Telefono;
+            contexto.SaveChanges();
+        }
     }
 }
