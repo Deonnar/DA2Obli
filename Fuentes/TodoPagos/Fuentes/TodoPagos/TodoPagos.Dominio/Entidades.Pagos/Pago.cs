@@ -21,47 +21,10 @@ namespace TodoPagos.Dominio.Entidades.Pagos
         public DateTime FechaEmision { get; set; }
 
         //public TipoPago TipoPago { get; set; }
-        long importeFactura = Int32.MinValue;
-        long importePago = Int32.MinValue;
-       
-        public long ImporteFactura
-        {  
-         get
-            {
-                return importeFactura;
-            }
-            set
-            {
-                if (value > importePago)
-                {
-                    importeFactura = value;
-                }
-                else
-                {
-                    throw new System.ArgumentException("El importe debe menor o igual a lo pagado");
-                }
-            }
-        
-        
-        }
-        
-        public long ImportePago { 
-             get
-            {
-                return importePago;
-            }
-            set
-            {
-                if (value < importeFactura)
-                {
-                    importePago = value;
-                }
-                else
-                {
-                    throw new System.ArgumentException("El importe pago debe menor o igual al importe de la factura");
-                }
-            }
-         }
+  
+        public long ImporteFactura { get; set; }
+
+        public bool EstaPaga { get; set; }     
 
         public Proveedor Proveedor { get; set; }
 

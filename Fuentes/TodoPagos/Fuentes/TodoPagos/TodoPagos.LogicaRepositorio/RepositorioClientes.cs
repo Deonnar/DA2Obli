@@ -52,7 +52,6 @@ namespace TodoPagos.LogicaRepositorio
             cliente.Direccion = "Rivera 123";
             cliente.Nombre = "Juan";
             cliente.Telefono = "474";
-
             Agregar(cliente);
 
         }

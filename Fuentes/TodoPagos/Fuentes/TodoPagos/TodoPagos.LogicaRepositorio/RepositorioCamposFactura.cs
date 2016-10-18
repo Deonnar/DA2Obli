@@ -71,21 +71,20 @@ namespace TodoPagos.LogicaRepositorio
 
                 Pago up = new Pago();
                 up.ImporteFactura = 85;
-                up.ImportePago = 80;
+                up.EstaPaga = true;
                 up.FechaEmision = System.DateTime.Today;
                 up.FechaVencimiento = System.DateTime.Today;
                 up.PagoId = 1;
                 up.Proveedor = p;
                 up.Cliente = cliente;
                 contexto.Pagos.Add(up);
-                contexto.SaveChanges();
-
-        
-        
-         
+                contexto.SaveChanges();        
 
         }
 
-
+        public static void Modificar(int id, CamposFactura camposFacturas)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

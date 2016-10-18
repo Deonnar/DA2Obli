@@ -44,11 +44,11 @@ namespace TodoPAgos.RestApi.Controllers
         }
 
         // POST api/<controller>
-       /* public IHttpActionResult Post([FromBody]Usuario usuario)
+        public IHttpActionResult Post([FromBody]CamposFactura camposFactura)
         {
             try
             {
-                RepositorioUsuarios.AgregarUsuario(usuario);
+                RepositorioCamposFactura.Agregar(camposFactura);
                 return Ok();
             }
             catch (Exception e)
@@ -58,39 +58,19 @@ namespace TodoPAgos.RestApi.Controllers
         }
 
 
-        // PUT api/<controller>/5
-        public IHttpActionResult Put(int id, [FromBody]Usuario usuario)
+        // PUT api/<controller>/5 
+        public IHttpActionResult Put(int id, [FromBody]CamposFactura camposFacturas)
         {
             try
             {
-                // RepositorioUsuarios.Modificar(id, usuario);
-                return Ok(usuario);
-
-                /* if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            if (id != user.Id)
-            {
-                return BadRequest();
-            }
-
-            if(!userService.UpdateUser(id, user))
-            {
-                return NotFound();
-            }
-            return StatusCode(HttpStatusCode.NoContent);
-                
-                
-                
-                
+                RepositorioCamposFactura.Modificar(id, camposFacturas);
+                return Ok(camposFacturas);
             }
             catch (Exception e)
             {
                 return BadRequest(e.Message);
             }
-        }*/
+        }
 
         // DELETE api/<controller>/11
         public void Delete(int id)
