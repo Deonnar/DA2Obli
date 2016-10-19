@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TodoPagos.Dominio.Entidades.Proveedores;
-//using TodoPagos.LogicaNegocio;
+using TodoPagos.Dominio.Entidades.Proveedores; 
 using TodoPagos.Dominio.Entidades.Pagos;
 using TodoPagos.Dominio;
 
@@ -38,10 +37,30 @@ namespace TodoPagos.LogicaRepositorio
         public static Pago ObtenerPago(int id)
         {
             BdContexto contexto = BdContexto.GetInstance();
-            var usuarios = (from u in contexto.Pagos
+            var pagos = (from u in contexto.Pagos
                             where u.PagoId == id
                             select u);
-            return usuarios.First();
+            return pagos.First();
         }
+
+        public static IEnumerable<Pago> ObtenerPagoEntreFechas(DateTime inicio, DateTime fin)
+        {
+            BdContexto contexto = BdContexto.GetInstance();
+            var pagos = (from p in contexto.Pagos
+                         where p.FechaEmision >= inicio && p.FechaEmision <= fin
+                         select p);
+            return pagos;
+        }
+
+     /*   public static IEnumerable<Pago> ObtenerPagoEntreFechasPorProveedor(DateTime inicio, DateTime fin)
+        {
+            BdContexto contexto = BdContexto.GetInstance();
+            var pagos = (from p in contexto.Pagos
+                         where p.FechaEmision >= inicio && p.FechaEmision <= fin 
+                         group p by p.Proveedor.NombreProveedor
+                         into total
+                         select new { Id = total.Key, Count = total.Sum(p => p.ImporteFactura)});
+            return pagos.AsEnumerable();
+        }*/
     }
 }

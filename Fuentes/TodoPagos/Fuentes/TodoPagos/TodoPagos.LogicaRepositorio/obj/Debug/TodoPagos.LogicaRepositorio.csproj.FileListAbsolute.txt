@@ -44,3 +44,17 @@ C:\Users\Usuario\Documents\TodoPagosDA2\Fuentes\TodoPagos\Fuentes\TodoPagos\Todo
 C:\Users\Usuario\Documents\TodoPagosDA2\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\bin\Debug\es\EntityFramework.resources.dll
 C:\Users\Usuario\Documents\TodoPagosDA2\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\bin\Debug\es\EntityFramework.SqlServer.resources.dll
 C:\Users\Usuario\Documents\TodoPagosDA2\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\obj\Debug\TodoPagos.LogicaRepositorio.pdb
+C:\Users\Usuario\Desktop\Diseño 2 Entrega 1\TodoPagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\bin\Debug\TodoPagos.LogicaRepositorio.dll.config
+C:\Users\Usuario\Desktop\Diseño 2 Entrega 1\TodoPagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\bin\Debug\TodoPagos.LogicaRepositorio.dll
+C:\Users\Usuario\Desktop\Diseño 2 Entrega 1\TodoPagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\bin\Debug\TodoPagos.LogicaRepositorio.pdb
+C:\Users\Usuario\Desktop\Diseño 2 Entrega 1\TodoPagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\bin\Debug\EntityFramework.dll
+C:\Users\Usuario\Desktop\Diseño 2 Entrega 1\TodoPagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Usuario\Desktop\Diseño 2 Entrega 1\TodoPagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\bin\Debug\TodoPagos.Dominio.dll
+C:\Users\Usuario\Desktop\Diseño 2 Entrega 1\TodoPagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\bin\Debug\TodoPagos.Dominio.pdb
+C:\Users\Usuario\Desktop\Diseño 2 Entrega 1\TodoPagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\bin\Debug\EntityFramework.xml
+C:\Users\Usuario\Desktop\Diseño 2 Entrega 1\TodoPagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Usuario\Desktop\Diseño 2 Entrega 1\TodoPagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\Usuario\Desktop\Diseño 2 Entrega 1\TodoPagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\bin\Debug\es\EntityFramework.SqlServer.resources.dll
+C:\Users\Usuario\Desktop\Diseño 2 Entrega 1\TodoPagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\obj\Debug\TodoPagos.LogicaRepositorio.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Desktop\Diseño 2 Entrega 1\TodoPagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\obj\Debug\TodoPagos.LogicaRepositorio.dll
+C:\Users\Usuario\Desktop\Diseño 2 Entrega 1\TodoPagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\obj\Debug\TodoPagos.LogicaRepositorio.pdb
