@@ -63,7 +63,7 @@ namespace TodoPagos.RestApi.Controllers
         {
             try
             {
-               // RepositorioUsuarios.Modificar(id, usuario);
+                RepositorioUsuarios.Modificar(id, usuario);
                 return Ok(usuario);
 
                 /* if (!ModelState.IsValid)

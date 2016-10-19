@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TodoPagos.Dominio.Entidades.Proveedores;
-//ing TodoPagos.LogicaNegocio;
+using TodoPagos.Dominio.Entidades.Proveedores; 
 using TodoPagos.Dominio;
 
 namespace TodoPagos.LogicaRepositorio
@@ -31,14 +30,12 @@ namespace TodoPagos.LogicaRepositorio
         }
 
         public static void AgregarProveedor(Proveedor unProveedor)
-        {
-          //  Proveedor proveedor = ObtenerProveedor(unProveedor.ProveedorId);
-        //    if (proveedor != null)
-            {
-                BdContexto contexto = BdContexto.GetInstance();
-                contexto.Proveedores.Add(unProveedor);
-                contexto.SaveChanges();
-            }
+        {        
+     
+           BdContexto contexto = BdContexto.GetInstance();
+           contexto.Proveedores.Add(unProveedor);
+           contexto.SaveChanges();
+      
           }
 
         public static Proveedor ObtenerProveedor(int idProveedor)
@@ -49,6 +46,17 @@ namespace TodoPagos.LogicaRepositorio
                             orderby f.ProveedorId
                             select f);
             return facturas.First();
+        }
+
+        public static void Modificar(int id, Proveedor proveedor)
+        {
+            BdContexto contexto = BdContexto.GetInstance();
+            Proveedor aModificar = contexto.Proveedores.Single(p => p.ProveedorId == id);
+
+            aModificar.NombreProveedor = proveedor.NombreProveedor;
+            aModificar.Descripcion = proveedor.Descripcion;
+            
+            contexto.SaveChanges();
         }
     }
 }

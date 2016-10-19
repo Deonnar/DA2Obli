@@ -9,7 +9,6 @@ using TodoPagos.LogicaRepositorio;
 
 namespace TodoPagos.RestApi.Controllers
 {
-   // [Authorize]
     public class ProveedoresController : ApiController
     {
         // GET api/values
@@ -31,7 +30,7 @@ namespace TodoPagos.RestApi.Controllers
             {
                 return BadRequest(e.Message);
             }
-            return null;
+            
         }
 
         // POST api/<controller>
@@ -39,7 +38,7 @@ namespace TodoPagos.RestApi.Controllers
         {
             try
             {
-                //  RepositorioUsuarios.Agregar(usuario);
+                RepositorioProveedores.AgregarProveedor(proveedor);
                 return Ok();
             }
             catch (Exception e)
@@ -48,13 +47,12 @@ namespace TodoPagos.RestApi.Controllers
             }
         }
 
-
         // PUT api/<controller>/5
         public IHttpActionResult Put(int id, [FromBody]Proveedor proveedor)
         {
             try
             {
-                //     RepositorioUsuarios.Modificar(id, usuario);
+                RepositorioProveedores.Modificar(id, proveedor);
                 return Ok(proveedor);
             }
             catch (Exception e)
@@ -62,11 +60,6 @@ namespace TodoPagos.RestApi.Controllers
                 return BadRequest(e.Message);
             }
         }
-
-        // DELETE api/<controller>/11
-        public void Delete(int id)
-        {
-            // No se implementa
-        }
+       
     }
 }

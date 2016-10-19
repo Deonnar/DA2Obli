@@ -43,7 +43,6 @@ namespace TodoPAgos.RestApi.Controllers
 
         }
 
-        // POST api/<controller>
         public IHttpActionResult Post([FromBody]List<Pago> listaPagos)
         {
             try
@@ -61,49 +60,11 @@ namespace TodoPAgos.RestApi.Controllers
             }
         }
 
-
-
-
-        /*
-        // PUT api/<controller>/5
-        public IHttpActionResult Put(int id, [FromBody]Usuario usuario)
+        public IHttpActionResult Put(int id, [FromBody]Pago pago)
         {
-            try
-            {
-                // RepositorioUsuarios.Modificar(id, usuario);
-                return Ok(usuario);
-
-                /* if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            if (id != user.Id)
-            {
-                return BadRequest();
-            }
-
-            if(!userService.UpdateUser(id, user))
-            {
-                return NotFound();
-            }
-            return StatusCode(HttpStatusCode.NoContent);
-                
-                
-                
-                
-            }
-            catch (Exception e)
-            {
-                return BadRequest(e.Message);
-            }
-        }
-        */
-        // DELETE api/<controller>/11
-        public void Delete(int id)
-        {
-            //repositorioUsuarios.BorrarUsuario(id);
-
-        }
+            //no se deben modificar los pagos
+            return BadRequest(e.Message);
+        }     
+     
     }
 }

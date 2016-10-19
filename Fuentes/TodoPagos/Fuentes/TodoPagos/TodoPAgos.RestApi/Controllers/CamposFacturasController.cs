@@ -12,14 +12,8 @@ namespace TodoPAgos.RestApi.Controllers
     public class CamposFacturasController : ApiController
     {
         public CamposFacturasController()
-        {
-            //  repositorioUsuarios = new ServiciosUsuario();
-        }
-      /*  public UsuariosController(IServiciosUsuarios u)
-        {
-            //  this.repositorioUsuarios = u;
-        }*/
-
+        {}
+     
         // GET api/values
         [HttpGet]
         public IEnumerable<CamposFactura> Get()

@@ -16,7 +16,7 @@ namespace TodoPagos.LogicaRepositorio
         public static void Agregar(int Id)
         {
             BdContexto contexto = BdContexto.GetInstance();
-            //  Usuario usuario = contexto.Usuarios.Include("Usuarios").ToList().Find(u => u.UsuarioId == IdUsuario);
+            CamposFactura campos = contexto.CamposFacturas.Include("CamposFacturas").ToList().Find(c => c.CamposFacturaId == Id);
             contexto.SaveChanges();
         }
 
