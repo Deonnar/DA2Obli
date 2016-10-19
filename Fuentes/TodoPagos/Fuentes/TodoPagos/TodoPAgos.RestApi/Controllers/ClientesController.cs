@@ -47,7 +47,6 @@ namespace TodoPAgos.RestApi.Controllers
                 return BadRequest(e.Message);
             }
         }
-
      
         // PUT api/<controller>/5
         public IHttpActionResult Put(int id, [FromBody]Cliente cliente)
@@ -63,10 +62,6 @@ namespace TodoPAgos.RestApi.Controllers
             }
         }
 
-        // DELETE api/<controller>/5
-        public void Delete(int id)
-        {
-            // No se implementa
-        }
+        
     }
 }

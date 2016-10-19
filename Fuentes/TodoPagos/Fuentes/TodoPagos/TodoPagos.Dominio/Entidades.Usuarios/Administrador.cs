@@ -10,5 +10,7 @@ namespace TodoPagos.Dominio.Entidades.Usuarios
 {
     public class Administrador : Usuario
     {
+        private String Sucursal { get; set; }
+        private String Responsabilidades{ get; set; }
     }
 }

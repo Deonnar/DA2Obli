@@ -1,10 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoPagos.LogicaNegocio", "TodoPagos.LogicaNegocio\TodoPagos.LogicaNegocio.csproj", "{EFEFF2C4-21F0-4782-954A-DBAFE71B8C5E}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoPagos.Repositorio", "TodoPagos.Repositorio\TodoPagos.Repositorio.csproj", "{BB3C608F-9D0E-4529-8385-DA029CE141EE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoPagos.Test", "TodoPagos.Test\TodoPagos.Test.csproj", "{E94C3BA6-1E8B-41BD-AA23-3F63E7F9F058}"
@@ -15,18 +13,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoPagos.LogicaRepositorio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoPagos.RestApi", "TodoPAgos.RestApi\TodoPagos.RestApi.csproj", "{7D639A36-C2EA-410E-8C2C-E9F59E353EEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoPagos.Servicios", "TodoPagos.Servicios\TodoPagos.Servicios.csproj", "{60D03B96-9250-4E9C-9230-21567E84DEA5}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EFEFF2C4-21F0-4782-954A-DBAFE71B8C5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EFEFF2C4-21F0-4782-954A-DBAFE71B8C5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EFEFF2C4-21F0-4782-954A-DBAFE71B8C5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EFEFF2C4-21F0-4782-954A-DBAFE71B8C5E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BB3C608F-9D0E-4529-8385-DA029CE141EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BB3C608F-9D0E-4529-8385-DA029CE141EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB3C608F-9D0E-4529-8385-DA029CE141EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -47,10 +39,6 @@ Global
 		{7D639A36-C2EA-410E-8C2C-E9F59E353EEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D639A36-C2EA-410E-8C2C-E9F59E353EEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D639A36-C2EA-410E-8C2C-E9F59E353EEE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{60D03B96-9250-4E9C-9230-21567E84DEA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{60D03B96-9250-4E9C-9230-21567E84DEA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{60D03B96-9250-4E9C-9230-21567E84DEA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{60D03B96-9250-4E9C-9230-21567E84DEA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

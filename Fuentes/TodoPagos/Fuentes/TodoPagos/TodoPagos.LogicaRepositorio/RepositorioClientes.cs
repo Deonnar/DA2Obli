@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TodoPagos.Dominio.Entidades.Usuarios;
 using TodoPagos.Dominio.Entidades.Pagos;
-using TodoPagos.LogicaNegocio;
+//using TodoPagos.LogicaNegocio;
 using TodoPagos.Dominio;
 
 namespace TodoPagos.LogicaRepositorio
@@ -47,7 +47,6 @@ namespace TodoPagos.LogicaRepositorio
         private void agregarDatos()
         {
             Cliente cliente = new Cliente();
-            cliente.Apellido = "Perez";
             cliente.Email = "test@gmail.com";
             cliente.Direccion = "Rivera 123";
             cliente.Nombre = "Juan";
@@ -62,7 +61,6 @@ namespace TodoPagos.LogicaRepositorio
             Cliente aModificar = contexto.Clientes.Single(u => u.ClienteId == id);
          
             aModificar.Nombre = cliente.Nombre;
-            aModificar.Apellido = cliente.Apellido;
             aModificar.Direccion = cliente.Direccion;
             aModificar.Email = cliente.Email;
             aModificar.Telefono = cliente.Telefono;

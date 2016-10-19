@@ -73,10 +73,6 @@
       <Project>{0acebc60-0092-4ad6-84ad-fa6327c5c300}</Project>
       <Name>TodoPagos.Dominio</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TodoPagos.LogicaNegocio\TodoPagos.LogicaNegocio.csproj">
-      <Project>{EFEFF2C4-21F0-4782-954A-DBAFE71B8C5E}</Project>
-      <Name>TodoPagos.LogicaNegocio</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

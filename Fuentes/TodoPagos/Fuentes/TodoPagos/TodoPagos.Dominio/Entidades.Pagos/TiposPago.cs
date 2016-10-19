@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TodoPagos.Dominio.Enumerados
 {
-    public class Enumerados
+    public class TiposPago
     {
         public enum TipoPago
         {

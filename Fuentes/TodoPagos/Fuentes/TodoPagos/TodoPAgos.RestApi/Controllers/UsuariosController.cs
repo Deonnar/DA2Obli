@@ -7,9 +7,6 @@ using System.Web.Http;
 using System.Net.Http;
 using TodoPagos.Dominio.Entidades.Usuarios;
 using TodoPagos.LogicaRepositorio;
-using TodoPagos.Repositorio.Contexto;
-using TodoPagos.Repositorio;
-using TodoPagos.Servicios;
 
 namespace TodoPagos.RestApi.Controllers
 {
@@ -19,10 +16,6 @@ namespace TodoPagos.RestApi.Controllers
 
         public UsuariosController(){
           //  repositorioUsuarios = new ServiciosUsuario();
-        }
-        public UsuariosController(IServiciosUsuarios u)
-        {
-          //  this.repositorioUsuarios = u;
         }
         
         // GET api/values

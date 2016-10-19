@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TodoPagos.Dominio.Entidades.Usuarios;
 using TodoPagos.Dominio.Entidades.Pagos;
-using TodoPagos.LogicaNegocio;
+//using TodoPagos.LogicaNegocio;
 using TodoPagos.Dominio;
 
 namespace TodoPagos.LogicaRepositorio

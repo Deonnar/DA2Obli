@@ -295,13 +295,9 @@ C:\Users\Usuario\Documents\TodoPagosDA2\Fuentes\TodoPagos\Fuentes\TodoPagos\Todo
 C:\Users\Usuario\Documents\TodoPagosDA2\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPAgos.RestApi\bin\System.Web.WebPages.Razor.dll
 C:\Users\Usuario\Documents\TodoPagosDA2\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPAgos.RestApi\bin\TodoPagos.Dominio.dll
 C:\Users\Usuario\Documents\TodoPagosDA2\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPAgos.RestApi\bin\TodoPagos.LogicaRepositorio.dll
-C:\Users\Usuario\Documents\TodoPagosDA2\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPAgos.RestApi\bin\TodoPagos.Repositorio.dll
-C:\Users\Usuario\Documents\TodoPagosDA2\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPAgos.RestApi\bin\TodoPagos.Servicios.dll
 C:\Users\Usuario\Documents\TodoPagosDA2\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPAgos.RestApi\bin\WebGrease.dll
 C:\Users\Usuario\Documents\TodoPagosDA2\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPAgos.RestApi\bin\TodoPagos.Dominio.pdb
 C:\Users\Usuario\Documents\TodoPagosDA2\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPAgos.RestApi\bin\TodoPagos.LogicaRepositorio.pdb
-C:\Users\Usuario\Documents\TodoPagosDA2\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPAgos.RestApi\bin\TodoPagos.Repositorio.pdb
-C:\Users\Usuario\Documents\TodoPagosDA2\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPAgos.RestApi\bin\TodoPagos.Servicios.pdb
 C:\Users\Usuario\Documents\TodoPagosDA2\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPAgos.RestApi\bin\Microsoft.AI.DependencyCollector.xml
 C:\Users\Usuario\Documents\TodoPagosDA2\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPAgos.RestApi\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Users\Usuario\Documents\TodoPagosDA2\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPAgos.RestApi\bin\Microsoft.AI.Web.xml

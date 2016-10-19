@@ -78,10 +78,6 @@
       <Project>{bb3c608f-9d0e-4529-8385-da029ce141ee}</Project>
       <Name>TodoPagos.Repositorio</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TodoPagos.Servicios\TodoPagos.Servicios.csproj">
-      <Project>{60d03b96-9250-4e9c-9230-21567e84dea5}</Project>
-      <Name>TodoPagos.Servicios</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -17,13 +17,13 @@ namespace TodoPagos.Dominio
         public DbSet<TodoPagos.Dominio.Entidades.Proveedores.Proveedor> Proveedores { get; set; }
         public DbSet<TodoPagos.Dominio.Entidades.Pagos.CamposFactura> CamposFacturas { get; set; }
         public DbSet<TodoPagos.Dominio.Entidades.Pagos.Cliente> Clientes { get; set; }
+       
         public static BdContexto GetInstance()
         {
             if (contexto == null)
             {
                 contexto = new BdContexto();
             }
-
             return contexto;
         }
     }

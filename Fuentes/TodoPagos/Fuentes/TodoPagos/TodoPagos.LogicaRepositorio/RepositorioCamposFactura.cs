@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using TodoPagos.Dominio.Entidades.Usuarios;
 using TodoPagos.Dominio.Entidades.Pagos;
 using TodoPagos.Dominio.Entidades.Proveedores; 
-using TodoPagos.LogicaNegocio;
+//using TodoPagos.LogicaNegocio;
 using TodoPagos.Dominio;
 
 namespace TodoPagos.LogicaRepositorio
@@ -50,7 +50,7 @@ namespace TodoPagos.LogicaRepositorio
             BdContexto contexto = BdContexto.GetInstance();
 
             Cliente cliente = new Cliente();
-            cliente.Apellido = "Perez";
+         
             cliente.Email = "test@gmail.com";
             cliente.Direccion = "Rivera 123";
             cliente.Nombre = "Juan";

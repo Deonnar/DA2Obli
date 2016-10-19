@@ -57,7 +57,7 @@
     <Compile Include="Entidades.Usuarios\Administrador.cs" />
     <Compile Include="Entidades.Usuarios\Cajero.cs" />
     <Compile Include="Entidades.Usuarios\Usuario.cs" />
-    <Compile Include="Enumerados\Enumerados.cs" />
+    <Compile Include="Entidades.Pagos\TiposPago.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

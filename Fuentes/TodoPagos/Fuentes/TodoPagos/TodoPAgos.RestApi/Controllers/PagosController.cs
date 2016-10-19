@@ -43,21 +43,6 @@ namespace TodoPAgos.RestApi.Controllers
 
         }
 
-
-       /* // POST api/<controller>
-        public IHttpActionResult Post([FromBody]Pago p)
-        {
-            try
-            {
-                RepositorioPagos.Agregar(p);
-                return Ok(p);
-            }
-            catch (Exception e)
-            {
-                return BadRequest(e.Message);
-            }
-        }*/
-
         // POST api/<controller>
         public IHttpActionResult Post([FromBody]List<Pago> listaPagos)
         {

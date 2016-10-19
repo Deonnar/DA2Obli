@@ -38,9 +38,7 @@ C:\Users\Usuario\Documents\TodoPagosDA2\Fuentes\TodoPagos\Fuentes\TodoPagos\Todo
 C:\Users\Usuario\Documents\TodoPagosDA2\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\bin\Debug\EntityFramework.dll
 C:\Users\Usuario\Documents\TodoPagosDA2\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Usuario\Documents\TodoPagosDA2\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\bin\Debug\TodoPagos.Dominio.dll
-C:\Users\Usuario\Documents\TodoPagosDA2\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\bin\Debug\TodoPagos.LogicaNegocio.dll
 C:\Users\Usuario\Documents\TodoPagosDA2\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\bin\Debug\TodoPagos.Dominio.pdb
-C:\Users\Usuario\Documents\TodoPagosDA2\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\bin\Debug\TodoPagos.LogicaNegocio.pdb
 C:\Users\Usuario\Documents\TodoPagosDA2\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\bin\Debug\EntityFramework.xml
 C:\Users\Usuario\Documents\TodoPagosDA2\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Usuario\Documents\TodoPagosDA2\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPagos.LogicaRepositorio\bin\Debug\es\EntityFramework.resources.dll

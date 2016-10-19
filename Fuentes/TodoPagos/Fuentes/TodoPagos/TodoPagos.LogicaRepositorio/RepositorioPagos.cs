@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TodoPagos.Dominio.Entidades.Proveedores;
-using TodoPagos.LogicaNegocio;
+//using TodoPagos.LogicaNegocio;
 using TodoPagos.Dominio.Entidades.Pagos;
 using TodoPagos.Dominio;
 
