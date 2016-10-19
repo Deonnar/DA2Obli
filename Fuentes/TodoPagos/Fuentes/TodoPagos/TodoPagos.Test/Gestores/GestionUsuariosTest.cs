@@ -12,7 +12,7 @@ namespace TodoPagos.Test.Gestores
     [TestClass]
     public class GestionUsuariosTest
     {
-      /*  private static Cajero cajero = new Cajero();
+        /*private static Cajero cajero = new Cajero();
         private void SetUp()
         {
             IRepositoryUsuario persistencia = new RepositoryUsuario();
@@ -99,9 +99,9 @@ namespace TodoPagos.Test.Gestores
             mockSet.As<IQueryable<Cajero>>().Setup(c => c.GetEnumerator).Returns(cajeros.GetEnumerator());
 
             var mockContext = new Mock<Context>();
-            mockContext.Setup(m => m.Cajeros).Return(mockSet.Object);
+            mockContext.Setup(m => m.Cajeros).Return(mockSet.Object);*/
 
         }
-        */
+        
     }
-}
+

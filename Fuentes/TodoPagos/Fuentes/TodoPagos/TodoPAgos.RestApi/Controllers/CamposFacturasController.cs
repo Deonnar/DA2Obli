@@ -64,13 +64,6 @@ namespace TodoPAgos.RestApi.Controllers
             {
                 return BadRequest(e.Message);
             }
-        }
-
-        // DELETE api/<controller>/11
-        public void Delete(int id)
-        {
-            //repositorioUsuarios.BorrarUsuario(id);
-
-        }
+        }        
     }
 }

@@ -42,18 +42,7 @@ namespace TodoPagos.LogicaRepositorio
                             where u.ClienteId == id
                             select u);
             return usuarios.First();
-        }
-
-        private void agregarDatos()
-        {
-            Cliente cliente = new Cliente();
-            cliente.Email = "test@gmail.com";
-            cliente.Direccion = "Rivera 123";
-            cliente.Nombre = "Juan";
-            cliente.Telefono = "474";
-            Agregar(cliente);
-
-        }
+        }      
 
         public static void Modificar(int id, Cliente cliente)
         {

@@ -3,7 +3,6 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TodoPagos.Repositorio;
 using TodoPagos.Dominio.Entidades.Usuarios;
 using Moq;
-using TodoPagos.Servicios;
 using System.Collections.Generic;
 using TodoPagos.Dominio.Entidades.Usuarios;
 using TodoPagos.Dominio.Entidades.Pagos;
@@ -23,7 +22,7 @@ namespace TodoPagos.Test.Servicios
 
             mockUnitOfWork.Setup(un => un.RepositorioUsuario.ObtenerLista(null, null, ""));
 
-            IServiciosUsuarios serviciosUsuarios  = new ServiciosUsuario(mockUnitOfWork.Object);
+           // IServiciosUsuarios serviciosUsuarios  = new ServiciosUsuario(mockUnitOfWork.Object);
 
             //Act
          //   IEnumerable<Usuario> returnedUsers = serviciosUsuarios.ObtenerUsuarios();
@@ -40,10 +39,10 @@ namespace TodoPagos.Test.Servicios
             //Esperamos que se llame al metodo Get del userRepository con un int
             mockUnitOfWork.Setup(un => un.RepositorioUsuario.Obtener(It.IsAny<int>()));
 
-            IServiciosUsuarios serviciosUsuarios = new ServiciosUsuario(mockUnitOfWork.Object);
+           // IServiciosUsuarios serviciosUsuarios = new ServiciosUsuario(mockUnitOfWork.Object);
 
             //Act
-            Usuario usuarioObtenido = serviciosUsuarios.ObtenerUsuario(5);
+       //     Usuario usuarioObtenido = serviciosUsuarios.ObtenerUsuario(5);
 
             //Assert
             mockUnitOfWork.VerifyAll();
@@ -53,26 +52,12 @@ namespace TodoPagos.Test.Servicios
         public void Datos()
         {
             BdContexto contexto = BdContexto.GetInstance();
-            
-
-           
-            
-            Pago up = new Pago();
+              Pago up = new Pago();
             up.ImporteFactura = 30;
-            up.ImportePago = 8;
             up.FechaEmision = System.DateTime.Today;
             up.FechaVencimiento = System.DateTime.Today;
             up.PagoId = 1;         
             contexto.Pagos.Add(up);
-
-
-
         }
-
-
-
-
-
-
     }
 }

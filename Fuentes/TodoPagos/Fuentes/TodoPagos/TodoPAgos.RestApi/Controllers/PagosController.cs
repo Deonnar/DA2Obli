@@ -13,11 +13,7 @@ namespace TodoPAgos.RestApi.Controllers
     public class PagosController : ApiController
     {
 
-        public PagosController()
-        {
-            //  repositorioUsuarios = new ServiciosUsuario();
-        }
-      
+        public PagosController(){}     
 
         // GET api/values
         [HttpGet]
@@ -63,7 +59,7 @@ namespace TodoPAgos.RestApi.Controllers
         public IHttpActionResult Put(int id, [FromBody]Pago pago)
         {
             //no se deben modificar los pagos
-            return BadRequest(e.Message);
+            return null;
         }     
      
     }
