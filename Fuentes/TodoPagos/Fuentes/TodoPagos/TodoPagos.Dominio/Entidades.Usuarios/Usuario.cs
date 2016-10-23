@@ -20,5 +20,7 @@ namespace TodoPagos.Dominio.Entidades.Usuarios
         public string Direccion { get; set; }
         public string Contrasenia { get; set; }
         public string NombreUsuario { get; set; }
+        public Guid Token { get; set; }
+        
     }
 }

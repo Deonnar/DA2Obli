@@ -85,3 +85,17 @@ C:\Users\Usuario\Documents\TodoPagosDA2\Fuentes\TodoPagos\Fuentes\TodoPagos\Todo
 C:\Users\Usuario\Documents\TodoPagosDA2\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPagos.Repositorio\obj\Debug\TodoPagos.Repositorio.csprojResolveAssemblyReference.cache
 C:\Users\Usuario\Documents\TodoPagosDA2\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPagos.Repositorio\obj\Debug\TodoPagos.Repositorio.dll
 C:\Users\Usuario\Documents\TodoPagosDA2\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPagos.Repositorio\obj\Debug\TodoPagos.Repositorio.pdb
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPagos.Repositorio\bin\Debug\TodoPagos.Repositorio.dll.config
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPagos.Repositorio\bin\Debug\TodoPagos.Repositorio.dll
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPagos.Repositorio\bin\Debug\TodoPagos.Repositorio.pdb
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPagos.Repositorio\bin\Debug\EntityFramework.dll
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPagos.Repositorio\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPagos.Repositorio\bin\Debug\TodoPagos.Dominio.dll
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPagos.Repositorio\bin\Debug\TodoPagos.Dominio.pdb
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPagos.Repositorio\bin\Debug\EntityFramework.xml
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPagos.Repositorio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPagos.Repositorio\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPagos.Repositorio\bin\Debug\es\EntityFramework.SqlServer.resources.dll
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPagos.Repositorio\obj\Debug\TodoPagos.Repositorio.dll
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPagos.Repositorio\obj\Debug\TodoPagos.Repositorio.pdb
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPagos.Repositorio\obj\Debug\TodoPagos.Repositorio.csprojResolveAssemblyReference.cache

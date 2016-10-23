@@ -34,6 +34,10 @@ namespace TodoPagos.LogicaRepositorio
         public static void AgregarUsuario(Usuario unUsuario)
         {
             BdContexto contexto = BdContexto.GetInstance();
+          
+            Guid guid = Guid.NewGuid();
+            unUsuario.Token = guid;
+
             contexto.Usuarios.Add(unUsuario);
             contexto.SaveChanges();
         }

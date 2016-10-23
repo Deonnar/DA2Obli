@@ -2,7 +2,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TodoPagos.Repositorio;
 using TodoPagos.Dominio.Entidades.Usuarios;
-using Moq;
 using System.Collections.Generic;
 using TodoPagos.Dominio.Entidades.Usuarios;
 using TodoPagos.Dominio.Entidades.Pagos;
@@ -14,7 +13,7 @@ namespace TodoPagos.Test.Servicios
     [TestClass]
     public class ServicioUsuariosTest
     {
-        [TestMethod]
+   /*     [TestMethod]
         public void ObtenerTodosLosUsuariosDelRepositorio()
         {
             //Arrange
@@ -59,5 +58,5 @@ namespace TodoPagos.Test.Servicios
             up.PagoId = 1;         
             contexto.Pagos.Add(up);
         }
-    }
+    */}
 }

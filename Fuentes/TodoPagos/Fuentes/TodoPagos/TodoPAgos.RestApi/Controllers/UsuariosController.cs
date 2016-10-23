@@ -43,7 +43,7 @@ namespace TodoPagos.RestApi.Controllers
             try
             {
                 RepositorioUsuarios.AgregarUsuario(usuario);
-                return Ok();
+                return Ok(usuario);
             }
             catch (Exception e)
             {
