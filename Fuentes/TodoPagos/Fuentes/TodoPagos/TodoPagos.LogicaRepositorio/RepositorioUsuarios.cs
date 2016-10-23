@@ -21,7 +21,11 @@ namespace TodoPagos.LogicaRepositorio
 
         public static IEnumerable<Usuario> ObtenerUsuarios()
         {
-           Usuario up = new Usuario();
+            Usuario up = new Usuario();
+            up.Contrasenia = "a";
+            up.NombreUsuario = "a";
+            Guid guid = Guid.NewGuid();
+            up.Token = guid;
             up.Nombre = "usuario 2";
             AgregarUsuario(up);
             BdContexto contexto = BdContexto.GetInstance();
@@ -36,6 +40,7 @@ namespace TodoPagos.LogicaRepositorio
             BdContexto contexto = BdContexto.GetInstance();
           
             Guid guid = Guid.NewGuid();
+
             unUsuario.Token = guid;
 
             contexto.Usuarios.Add(unUsuario);
@@ -47,6 +52,15 @@ namespace TodoPagos.LogicaRepositorio
             BdContexto contexto = BdContexto.GetInstance();
             var usuarios = (from u in contexto.Usuarios
                             where u.UsuarioId == unIdUsuario
+                            orderby u.Nombre
+                            select u);
+            return usuarios.First();
+        }
+        public static Usuario ObtenerUsuarioPorUsername(String userName)
+        {
+            BdContexto contexto = BdContexto.GetInstance();
+            var usuarios = (from u in contexto.Usuarios
+                            where u.NombreUsuario == userName
                             orderby u.Nombre
                             select u);
             return usuarios.First();
@@ -66,7 +80,31 @@ namespace TodoPagos.LogicaRepositorio
             contexto.SaveChanges();
         }
 
-        public static Usuario ValidacionLogIn(String nombreUsuario, String contrasenia)
+        public static Boolean AutentificarUsuario(String nombreUsuario, String contrasenia, Guid guid)
+        {
+            BdContexto contexto = BdContexto.GetInstance();
+            try
+            {
+               /* var usuario = (from u in contexto.Usuarios
+                               where u.NombreUsuario == nombreUsuario && u.Contrasenia == contrasenia && u.Token == guid
+                               select u);*/
+                Usuario u = ObtenerUsuarioPorUsername(nombreUsuario);
+
+                if (u != null && u.Token == guid)
+                {
+                    AutorizarAutentificacion(u.UsuarioId);
+                    return true;
+                }
+                return false;
+              
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public static Usuario LogearUsuario(String nombreUsuario, String contrasenia)
         {
             BdContexto contexto = BdContexto.GetInstance();
             try
@@ -82,5 +120,29 @@ namespace TodoPagos.LogicaRepositorio
             }
         }
 
+        private static void AutorizarAutentificacion(int idUsuario)
+        {
+            BdContexto contexto = BdContexto.GetInstance();
+            Usuario aModificar = contexto.Usuarios.Single(u => u.UsuarioId == idUsuario);
+            aModificar.Autorizado = true;
+            contexto.SaveChanges();
+        }
+
+
+        public static Usuario EstaAutentificadoElUsuario(String nombreUsuario)
+        {
+            BdContexto contexto = BdContexto.GetInstance();
+            try
+            {
+                var usuario = (from u in contexto.Usuarios
+                               where u.NombreUsuario == nombreUsuario
+                               select u);
+                return usuario.First();
+            }
+            catch
+            {
+                return null;
+            }
+        }
     }
 }

@@ -55,6 +55,8 @@ namespace TodoPagos.LogicaRepositorio
             cliente.Direccion = "Rivera 123";
             cliente.Nombre = "Juan";
             cliente.Telefono = "093444474";
+            Guid guid = Guid.NewGuid();
+            
             contexto.Clientes.Add(cliente);
             contexto.SaveChanges();
 
