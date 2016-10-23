@@ -64,6 +64,7 @@
   <ItemGroup>
     <Compile Include="Gestores\GestionUsuariosTest.cs" />
     <Compile Include="Gestores\GestionPagosTest.cs" />
+    <Compile Include="Gestores\Usuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Servicios\ServicioUsuariosTest.cs" />
   </ItemGroup>

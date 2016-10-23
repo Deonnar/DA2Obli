@@ -15,14 +15,14 @@ namespace TodoPAgos.RestApi.Controllers
         {
             try
             {
-                Usuario u = RepositorioUsuarios.ObtenerUsuarioPorUsername(datosLogin.NombreUsuario);
+                Usuario u = RepositorioLogin.ObtenerUsuarioPorUsername(datosLogin.NombreUsuario);
                 if (u.Autorizado)
                 {
                     return Ok(u);
                 }
                 else
                 {
-                    if (RepositorioUsuarios.AutentificarUsuario(datosLogin.NombreUsuario, datosLogin.Contrasenia, datosLogin.Token))
+                    if (RepositorioLogin.AutentificarUsuario(datosLogin.NombreUsuario, datosLogin.Contrasenia, datosLogin.Token))
 
                         return Ok(u);
                     else

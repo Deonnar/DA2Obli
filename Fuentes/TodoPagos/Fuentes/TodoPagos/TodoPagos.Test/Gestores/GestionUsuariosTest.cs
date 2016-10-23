@@ -12,20 +12,23 @@ namespace TodoPagos.Test.Gestores
     [TestClass]
     public class GestionUsuariosTest
     {
-        /*private static Cajero cajero = new Cajero();
-        private void SetUp()
+        private static Cajero cajero = new Cajero();
+        /*private void SetUp()
         {
-            IRepositoryUsuario persistencia = new RepositoryUsuario();
+             persistencia = new RepositoryUsuario();
         }
 
         private void CrearUsuario()
         {
-           // NumeroIdentificacion = "1";
-            cajero.Nombre = "Alan";
-            cajero.Apellido = "Rodriguez";
-            cajero.Cedula = "222222-2";
-            cajero.Direccion = "Rivera 123";
-            cajero.EstaBorrado = false;
+            Usuario up = new Usuario();
+            up.Contrasenia = "a";
+            up.NombreUsuario = "a";
+            Guid guid = Guid.NewGuid();
+            up.Token = guid;
+            up.Nombre = "usuario 2";
+            AgregarUsuario(up);
+
+
         }
 
 
