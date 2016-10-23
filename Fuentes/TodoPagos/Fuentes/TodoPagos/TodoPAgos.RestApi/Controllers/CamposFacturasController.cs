@@ -43,14 +43,13 @@ namespace TodoPAgos.RestApi.Controllers
             try
             {
                 RepositorioCamposFactura.Agregar(camposFactura);
-                return Ok();
+                return Ok(camposFactura);
             }
             catch (Exception e)
             {
                 return BadRequest(e.Message);
             }
         }
-
 
         // PUT api/<controller>/5 
         public IHttpActionResult Put(int id, [FromBody]CamposFactura camposFacturas)
