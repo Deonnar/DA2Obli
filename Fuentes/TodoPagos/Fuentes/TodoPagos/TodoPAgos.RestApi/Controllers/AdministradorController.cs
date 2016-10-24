@@ -4,15 +4,15 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+
 using TodoPagos.Dominio.Entidades.Usuarios;
 using TodoPagos.LogicaRepositorio;
 
-
 namespace TodoPAgos.RestApi.Controllers
 {
-    public class CajerosController : ApiController
+    public class AdministradorController : ApiController
     {
-        public CajerosController() { }
+        public AdministradorController() { }
 
         // GET api/values
         [HttpGet]
@@ -65,6 +65,5 @@ namespace TodoPAgos.RestApi.Controllers
                 return BadRequest(e.Message);
             }
         }
-
     }
 }

@@ -53,6 +53,8 @@
   <ItemGroup>
     <Compile Include="BdContexto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RepositorioAdministrador.cs" />
+    <Compile Include="RepositorioCajeros.cs" />
     <Compile Include="RepositorioCamposFactura.cs" />
     <Compile Include="RepositorioClientes.cs" />
     <Compile Include="RepositorioLogin.cs" />
