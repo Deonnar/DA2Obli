@@ -591,3 +591,5 @@ C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoP
 C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPAgos.RestApi\bin\es\System.Web.Http.Owin.resources.dll
 C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPAgos.RestApi\obj\Debug\TodoPAgos.RestApi.dll
 C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPAgos.RestApi\obj\Debug\TodoPAgos.RestApi.pdb
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPAgos.RestApi\bin\TodoPagos.Seguridad.dll
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPAgos.RestApi\bin\TodoPagos.Seguridad.pdb

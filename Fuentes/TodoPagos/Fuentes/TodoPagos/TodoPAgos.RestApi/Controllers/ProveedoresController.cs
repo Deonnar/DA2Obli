@@ -6,6 +6,7 @@ using System.Net.Http;
 using System.Web.Http;
 using TodoPagos.Dominio.Entidades.Proveedores;
 using TodoPagos.LogicaRepositorio;
+using TodoPagos.Seguridad;
 
 namespace TodoPagos.RestApi.Controllers
 {
@@ -15,12 +16,16 @@ namespace TodoPagos.RestApi.Controllers
         [HttpGet]
         public IEnumerable<Proveedor> Get()
         {
+            ValidarAcceso.TieneAccesso(Request);
+
             return RepositorioProveedores.ObtenerProveedores();
         }
 
         // GET api/<controller>/11
         public IHttpActionResult Get(int id)
         {
+            ValidarAcceso.TieneAccesso(Request);
+
             try
             {
                 Proveedor proveedor = RepositorioProveedores.ObtenerProveedor(id);
@@ -36,6 +41,8 @@ namespace TodoPagos.RestApi.Controllers
         // POST api/<controller>
         public IHttpActionResult Post([FromBody]Proveedor proveedor)
         {
+            ValidarAcceso.TieneAccesso(Request);
+
             try
             {
                 RepositorioProveedores.AgregarProveedor(proveedor);
@@ -50,6 +57,8 @@ namespace TodoPagos.RestApi.Controllers
         // PUT api/<controller>/5
         public IHttpActionResult Put(int id, [FromBody]Proveedor proveedor)
         {
+            ValidarAcceso.TieneAccesso(Request);
+
             try
             {
                 RepositorioProveedores.Modificar(id, proveedor);

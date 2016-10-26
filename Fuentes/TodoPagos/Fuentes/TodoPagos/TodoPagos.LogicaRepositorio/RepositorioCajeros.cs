@@ -51,6 +51,21 @@ namespace TodoPagos.LogicaRepositorio
                             where u.UsuarioId == unIdUsuario
                             orderby u.Nombre
                             select u);
+
+            return usuarios.First();
+        }
+        
+        public static Cajero ObtenerCajeroPorNombreUsuario(String nombreUsuario)
+        {
+            BdContexto contexto = BdContexto.GetInstance();
+            var usuarios = (from u in contexto.Cajeros
+                            where u.NombreUsuario == nombreUsuario
+                            orderby u.Nombre
+                            select u);
+            if (!usuarios.Any())
+            {
+                return null;
+            }
             return usuarios.First();
         }
 

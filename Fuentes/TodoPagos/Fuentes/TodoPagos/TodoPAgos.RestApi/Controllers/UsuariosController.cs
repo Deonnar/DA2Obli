@@ -27,6 +27,7 @@ namespace TodoPagos.RestApi.Controllers
         {
             try
             {
+
                 Usuario usuario = RepositorioUsuarios.ObtenerUsuario(id);
                 return Ok(usuario);
             }

@@ -60,6 +60,18 @@ namespace TodoPagos.LogicaRepositorio
             contexto.Clientes.Add(cliente);
             contexto.SaveChanges();
 
+            Administrador admin = new Administrador();
+
+            admin.Direccion = "Tibbers";
+            admin.Nombre = "Tibbers";
+            admin.NombreUsuario = "x";
+            guid = Guid.NewGuid();
+
+            contexto.Administradores.Add(admin);
+            contexto.SaveChanges();
+
+
+
             Cliente cliente2 = new Cliente();
 
             cliente2.Email = "and123@gmail.com";

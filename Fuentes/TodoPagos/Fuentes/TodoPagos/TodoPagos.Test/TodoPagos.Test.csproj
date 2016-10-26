@@ -62,6 +62,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Dominio\CajeroTest.cs" />
     <Compile Include="Gestores\GestionUsuariosTest.cs" />
     <Compile Include="Gestores\GestionPagosTest.cs" />
     <Compile Include="Gestores\Usuarios.cs" />

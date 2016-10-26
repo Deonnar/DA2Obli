@@ -52,7 +52,7 @@ namespace TodoPagos.LogicaRepositorio
             return pagos;
         }
 
-     /*   public static IEnumerable<Pago> ObtenerPagoEntreFechasPorProveedor(DateTime inicio, DateTime fin)
+       /* public static IEnumerable<Pago> ObtenerPagoEntreFechasPorProveedor(DateTime inicio, DateTime fin)
         {
             BdContexto contexto = BdContexto.GetInstance();
             var pagos = (from p in contexto.Pagos
@@ -60,7 +60,7 @@ namespace TodoPagos.LogicaRepositorio
                          group p by p.Proveedor.NombreProveedor
                          into total
                          select new { Id = total.Key, Count = total.Sum(p => p.ImporteFactura)});
-            return pagos.AsEnumerable();
+            return pagos;
         }*/
     }
 }

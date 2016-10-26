@@ -57,6 +57,16 @@ namespace TodoPagos.LogicaRepositorio
             return usuarios.First();
         }
 
+        public static Usuario ObtenerUsuarioPorNombreUsuario(String nombreUsuario)
+        {
+            BdContexto contexto = BdContexto.GetInstance();
+            var usuarios = (from u in contexto.Usuarios
+                            where u.NombreUsuario == nombreUsuario
+                            orderby u.Nombre
+                            select u);
+            return usuarios.First();
+        }
+
 
         public static void Modificar(int id, Usuario usuario)
         {

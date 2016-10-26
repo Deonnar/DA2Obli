@@ -9,6 +9,7 @@ using System.Data.Entity;
 using System.Web;
 using System.Web.Http;
 using TodoPagos.Dominio.Entidades.Usuarios;
+using TodoPagos.Seguridad;
 
 namespace TodoPAgos.RestApi.Controllers
 {
@@ -20,6 +21,8 @@ namespace TodoPAgos.RestApi.Controllers
         [HttpGet]
         public IEnumerable<Cliente> Get()
         {
+            ValidarAcceso.TieneAccesso(Request);
+
             IEnumerable<Cliente> listaClientes = RepositorioClientes.ObtenerClientes();
             return listaClientes;
         }
@@ -27,6 +30,8 @@ namespace TodoPAgos.RestApi.Controllers
         // GET api/<controller>/11
         public IHttpActionResult Get(int id)
         {
+            ValidarAcceso.TieneAccesso(Request);
+
             try
             {
                 Cliente cliente = RepositorioClientes.Obtener(id);
@@ -40,6 +45,8 @@ namespace TodoPAgos.RestApi.Controllers
         // POST api/<controller>
         public IHttpActionResult Post([FromBody]Cliente c)
         {
+            ValidarAcceso.TieneAccesso(Request);
+
             try
             {
                 RepositorioClientes.Agregar(c);
@@ -54,6 +61,7 @@ namespace TodoPAgos.RestApi.Controllers
         // PUT api/<controller>/5
         public IHttpActionResult Put(int id, [FromBody]Cliente cliente)
         {
+            ValidarAcceso.TieneAccesso(Request);
             try
             {
                 RepositorioClientes.Modificar(id, cliente);
@@ -64,7 +72,5 @@ namespace TodoPAgos.RestApi.Controllers
                 return BadRequest(e.Message);
             }
         }
-
-        
     }
 }

@@ -6,6 +6,7 @@ using System.Net.Http;
 using System.Web.Http;
 using TodoPagos.Dominio.Entidades.Pagos;
 using TodoPagos.LogicaRepositorio;
+using TodoPagos.Seguridad;
 
 namespace TodoPAgos.RestApi.Controllers
 {
@@ -18,6 +19,8 @@ namespace TodoPAgos.RestApi.Controllers
         [HttpGet]
         public IEnumerable<CamposFactura> Get()
         {
+            ValidarAcceso.TieneAccesso(Request);
+
             IEnumerable<CamposFactura> facturas = RepositorioCamposFactura.ObtenerCamposFacturas();
             return facturas;
         }
@@ -27,6 +30,8 @@ namespace TodoPAgos.RestApi.Controllers
         {
             try
             {
+                ValidarAcceso.TieneAccesso(Request);
+
                 CamposFactura usuario = RepositorioCamposFactura.ObtenerCampo(id);
                 return Ok(usuario);
             }
@@ -40,6 +45,8 @@ namespace TodoPAgos.RestApi.Controllers
         // POST api/<controller>
         public IHttpActionResult Post([FromBody]CamposFactura camposFactura)
         {
+            ValidarAcceso.TieneAccesso(Request);
+
             try
             {
                 RepositorioCamposFactura.Agregar(camposFactura);
@@ -54,6 +61,8 @@ namespace TodoPAgos.RestApi.Controllers
         // PUT api/<controller>/5 
         public IHttpActionResult Put(int id, [FromBody]CamposFactura camposFacturas)
         {
+            ValidarAcceso.TieneAccesso(Request);
+
             try
             {
                 RepositorioCamposFactura.Modificar(id, camposFacturas);

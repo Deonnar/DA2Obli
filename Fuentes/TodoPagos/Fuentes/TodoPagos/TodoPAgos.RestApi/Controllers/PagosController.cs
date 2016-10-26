@@ -6,7 +6,7 @@ using System.Net.Http;
 using System.Web.Http;
 using TodoPagos.Dominio.Entidades.Pagos;
 using TodoPagos.LogicaRepositorio;
-
+using TodoPagos.Seguridad;
 
 namespace TodoPAgos.RestApi.Controllers
 {
@@ -19,16 +19,19 @@ namespace TodoPAgos.RestApi.Controllers
         [HttpGet]
         public IEnumerable<Pago> Get()
         {
+            ValidarAcceso.TieneAccesso(Request);
             IEnumerable<Pago> listaUsuarios = RepositorioPagos.ObtenerPagos();
 
             return listaUsuarios;
         }
 
         // GET api/<controller>/11
+
         public IHttpActionResult Get(int id)
         {
             try
-            {  
+            {
+               ValidarAcceso.TieneAccesso(Request);
                Pago pago = RepositorioPagos.ObtenerPago(id);
                return Ok(pago);
             }
@@ -45,6 +48,8 @@ namespace TodoPAgos.RestApi.Controllers
         {
             try
             {
+                ValidarAcceso.TieneAccesso(Request);
+
                 DateTime Desde = Convert.ToDateTime(desde);
                 DateTime Hasta = Convert.ToDateTime(hasta);
                 IEnumerable<Pago> pagos = RepositorioPagos.ObtenerPagoEntreFechas(Desde, Hasta);
