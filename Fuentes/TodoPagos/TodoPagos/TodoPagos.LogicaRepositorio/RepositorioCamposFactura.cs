@@ -48,31 +48,18 @@ namespace TodoPagos.LogicaRepositorio
         private static void agregarDatos()
         {
             BdContexto contexto = BdContexto.GetInstance();
-            Administrador admin = new Administrador();
-
-            Guid guid = Guid.NewGuid();
-            admin.Direccion = "Tibbers";
-            admin.Nombre = "Tibbers";
-            admin.NombreUsuario = "x";
-            guid = Guid.NewGuid();
-
-            contexto.Administradores.Add(admin);
-            contexto.SaveChanges();
-
-            /* Cliente cliente = new Cliente();
+                      
+             Cliente cliente = new Cliente();
 
              cliente.Email = "test@gmail.com";
              cliente.Direccion = "Rivera 123";
              cliente.Nombre = "Juan";
              cliente.Telefono = "093444474";
-             Guid guid = Guid.NewGuid();
+             Guid  guid = Guid.NewGuid();
 
              contexto.Clientes.Add(cliente);
              contexto.SaveChanges();
-             /*
-
-
-
+        
              Cliente cliente2 = new Cliente();
 
              cliente2.Email = "and123@gmail.com";
@@ -84,69 +71,35 @@ namespace TodoPagos.LogicaRepositorio
 
              //proveedores
              Proveedor p = new Proveedor();
-             p.NombreProveedor = "UTE";
-             p.Descripcion = "Proveedores de corriente eléctrica";
+             p.NombreProveedor = "IMM";
+             p.Descripcion = "Intendencia";
              contexto.Proveedores.Add(p);
-             contexto.SaveChanges();
-
-             Proveedor p2 = new Proveedor();
-             p2.NombreProveedor = "OSE";
-             p2.Descripcion = "Proveedores de Agua Potable";
-             contexto.Proveedores.Add(p2);
-             contexto.SaveChanges();
-
-
-             CamposFactura campoFactura = new CamposFactura();
-             campoFactura.Descripcion = "Watts";
-             campoFactura.Proveedor = p;
-             contexto.CamposFacturas.Add(campoFactura);
-             contexto.SaveChanges();
-
-             CamposFactura campoFactura2 = new CamposFactura();
-             campoFactura2.Descripcion = "Litros de Agua";
-             campoFactura.Proveedor = p2;
-             contexto.CamposFacturas.Add(campoFactura2);
-             contexto.SaveChanges();
-
-             CamposFactura campoFactura3 = new CamposFactura();
-             campoFactura3.Descripcion = "Precio por Watt";
-             campoFactura3.Proveedor = p;
-             contexto.CamposFacturas.Add(campoFactura3);
-             contexto.SaveChanges();
-
+             contexto.SaveChanges();            
+            
 
              Pago up = new Pago();
              up.ImporteFactura = 85;
              up.EstaPaga = true;
-              up.FechaEmision = System.DateTime.Today;
-                 up.FechaVencimiento = System.DateTime.Today;
-                 up.PagoId = 1;
-                 up.Proveedor = p;
-                 up.Cliente = cliente;
-                 contexto.Pagos.Add(up);
-                 contexto.SaveChanges();
+             up.FechaEmision = System.DateTime.Now;
+             up.FechaVencimiento = System.DateTime.Today;
+             up.PagoId = 1;
+             up.Proveedor = p;
+             up.Cliente = cliente;
+             contexto.Pagos.Add(up);
+             contexto.SaveChanges();
 
-                 Pago pago = new Pago();
-                 pago.ImporteFactura = 85;
-                 pago.EstaPaga = false;
-                 pago.FechaEmision = System.DateTime.Today;
-                 pago.FechaVencimiento = System.DateTime.Today;
-                 pago.PagoId = 1;
-                 pago.Proveedor = p;
-                 pago.Cliente = cliente;
+             Pago pago = new Pago();
+             pago.ImporteFactura = 85;
+             pago.EstaPaga = false;
+             pago.FechaEmision = System.DateTime.Now;
+             pago.FechaVencimiento = System.DateTime.Today;
+             pago.PagoId = 1;
+             pago.Proveedor = p;
+             pago.Cliente = cliente;
 
-                 contexto.Pagos.Add(pago);
-                 contexto.SaveChanges();
+             contexto.Pagos.Add(pago);
+             contexto.SaveChanges();
 
-                 Usuario u = new Usuario();
-                 u.Apellido = "Perez";
-                 u.Contrasenia = "123";
-                 u.Direccion = "Mercedes 1234";
-                 u.Nombre = "Sebatian";
-                 u.NombreUsuario = "sperez";
-                 contexto.Usuarios.Add(u);
-                 contexto.SaveChanges();
- */
         }
 
         public static void Modificar(int id, CamposFactura camposFacturas)

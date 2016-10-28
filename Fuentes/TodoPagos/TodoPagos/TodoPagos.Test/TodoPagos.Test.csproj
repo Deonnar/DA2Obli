@@ -81,10 +81,6 @@
       <Project>{e6a5179c-27d8-45ca-8010-6a2da091247a}</Project>
       <Name>TodoPagos.LogicaRepositorio</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TodoPagos.Repositorio\TodoPagos.Repositorio.csproj">
-      <Project>{bb3c608f-9d0e-4529-8385-da029ce141ee}</Project>
-      <Name>TodoPagos.Repositorio</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

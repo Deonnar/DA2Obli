@@ -5,7 +5,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TodoPagos.Dominio.Entidades.Usuarios;
-using TodoPagos.Repositorio;
 
 namespace TodoPagos.Test.Gestores
 {

@@ -1,0 +1,12 @@
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos\TodoPagos.Seguridad\bin\Release\TodoPagos.Seguridad.dll
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos\TodoPagos.Seguridad\bin\Release\TodoPagos.Seguridad.pdb
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos\TodoPagos.Seguridad\bin\Release\TodoPagos.Dominio.dll
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos\TodoPagos.Seguridad\bin\Release\TodoPagos.LogicaRepositorio.dll
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos\TodoPagos.Seguridad\bin\Release\EntityFramework.dll
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos\TodoPagos.Seguridad\bin\Release\TodoPagos.Dominio.pdb
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos\TodoPagos.Seguridad\bin\Release\TodoPagos.LogicaRepositorio.pdb
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos\TodoPagos.Seguridad\bin\Release\EntityFramework.xml
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos\TodoPagos.Seguridad\bin\Release\es\EntityFramework.resources.dll
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos\TodoPagos.Seguridad\obj\Release\TodoPagos.Seguridad.csprojResolveAssemblyReference.cache
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos\TodoPagos.Seguridad\obj\Release\TodoPagos.Seguridad.dll
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\TodoPagos\TodoPagos.Seguridad\obj\Release\TodoPagos.Seguridad.pdb

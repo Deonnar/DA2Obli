@@ -1,6 +1,5 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using TodoPagos.Repositorio;
 using TodoPagos.Dominio.Entidades.Usuarios;
 using System.Collections.Generic;
 using TodoPagos.Dominio.Entidades.Usuarios;

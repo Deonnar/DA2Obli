@@ -20,13 +20,7 @@ namespace TodoPagos.LogicaRepositorio
 
         public static IEnumerable<Administrador> ObtenerAdministradores()
         {
-            Administrador administrador = new Administrador();
-            administrador.Contrasenia = "admin";
-            administrador.NombreUsuario = "admin";
-            Guid guid = Guid.NewGuid();
-            administrador.Token = guid;
-            administrador.Nombre = "Administrador 1";
-            AgregarAdministrador(administrador);
+          
             BdContexto contexto = BdContexto.GetInstance();
             var usuarios = (from u in contexto.Administradores
                             orderby u.Nombre
