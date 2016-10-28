@@ -62,26 +62,61 @@ namespace TodoPAgos.RestApi.Controllers
 
         }
 
-
-        //Ganancias en un periodo determinado para cada Proveedor.
-        //localhost:13547/api/pagos/desde/01-08-2008/hasta/01-08-2016
-       /* [Route("api/Pagos/gananciasProveedores/desde/{desde}/hasta/{hasta}")]
-        public IEnumerable<Pago> Get(string desde, string hasta, int idProveedor)
+        [Route("api/Pagos/desde/{desde}/hasta/{hasta}/p/{p}")]
+        public long Get(string desde, string hasta, string p)
         {
-            try
+           /* try
             {
+                ValidarAcceso.TieneAccesso(Request);
+
                 DateTime Desde = Convert.ToDateTime(desde);
                 DateTime Hasta = Convert.ToDateTime(hasta);
-                IEnumerable<Pago> pagos = RepositorioPagos.ObtenerPagoEntreFechasPorProveedor(Desde, Hasta);
+                IEnumerable<Pago> pagos = RepositorioPagos.ObtenerPagoEntreFechas(Desde, Hasta);
                 return pagos;
             }
             catch (Exception e)
             {
                 return null;
             }
+            */
+             try
+            {
+                DateTime Desde = Convert.ToDateTime(desde);
+                DateTime Hasta = Convert.ToDateTime(hasta);
+                // IEnumerable<Pago> pagos = RepositorioPagos.ObtenerPagoEntreFechasPorProveedor(Desde, Hasta);
+                long ganancias = RepositorioPagos.ObtenerPagoEntreFechasPorProveedor(Desde, Hasta);
+
+                return ganancias;
+            }
+            catch (Exception e)
+            {
+                return 0;
+            }
+        }
+
+
+        //Ganancias en un periodo determinado para cada Proveedor.
+        //localhost:13547/api/pagos/gananciaproveedores/desde/01-08-2008/hasta/01-08-2016
+        [Route("api/Pagos/gananciasProveedores/desde/{desde}/hasta/{hasta}/proveedor/{idProveedor}")]
+        //  public IEnumerable<Pago> Get(string desde, string hasta, int idProveedor)
+        public long Get(string desde, string hasta, int idProveedor)
+        {
+            try
+            {
+                DateTime Desde = Convert.ToDateTime(desde);
+                DateTime Hasta = Convert.ToDateTime(hasta);
+                // IEnumerable<Pago> pagos = RepositorioPagos.ObtenerPagoEntreFechasPorProveedor(Desde, Hasta);
+                long ganancias = RepositorioPagos.ObtenerPagoEntreFechasPorProveedor(Desde, Hasta);
+
+                return ganancias;
+            }
+            catch (Exception e)
+            {
+                return 0;
+            }
 
         }
-        */
+        
 
         public IHttpActionResult Post([FromBody]List<Pago> listaPagos)
         {

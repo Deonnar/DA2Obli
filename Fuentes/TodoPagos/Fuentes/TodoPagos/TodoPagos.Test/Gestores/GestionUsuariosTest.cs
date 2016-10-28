@@ -12,7 +12,7 @@ namespace TodoPagos.Test.Gestores
     [TestClass]
     public class GestionUsuariosTest
     {
-        private static Cajero cajero = new Cajero();
+        private static Administrador cajero = new Administrador();
         /*private void SetUp()
         {
              persistencia = new RepositoryUsuario();
@@ -38,7 +38,7 @@ namespace TodoPagos.Test.Gestores
             SetUp();
             CrearUsuario();
             persistencia.Agregar(cajero);
-            Cajero cajeroSeleccionado = persistencia.ObtenerCajero(cajero.UsuarioId);
+            Administrador cajeroSeleccionado = persistencia.ObtenerCajero(cajero.UsuarioId);
 
             string nombre = "Alan";
             Assert.AreEqual(nombre, cajeroSeleccionado.nombre);
@@ -65,7 +65,7 @@ namespace TodoPagos.Test.Gestores
             SetUp();
             CrearFactura();
 
-            Cajero cajeroSeleccionado = persistencia.ObtenerCajero(cajero.UsuarioId);
+            Administrador cajeroSeleccionado = persistencia.ObtenerCajero(cajero.UsuarioId);
 
             cajeroSeleccionado.Nombre = "John";
             persistencia.Modificar(cajeroSeleccionado);
@@ -79,7 +79,7 @@ namespace TodoPagos.Test.Gestores
         {
             SetUp();
             CrearCajero();
-            Cajero cajeroSeleccionado = persistencia.ObtenerCajero(cajero.UsuarioId);
+            Administrador cajeroSeleccionado = persistencia.ObtenerCajero(cajero.UsuarioId);
 
             Assert.AreEqual(cajero, cajeroSeleccionado);
             Dispose();
@@ -93,13 +93,13 @@ namespace TodoPagos.Test.Gestores
         {
             int cantidadCajeros = 2;
 
-            var mockSet = new Mock<DbSet<Cajero>>();
+            var mockSet = new Mock<DbSet<Administrador>>();
             var cajeros = CreateFakeCajeros(cantidadCajeros).AsQueryable();
 
-            mockSet.As<IQueryable<Cajero>>().Setup(c => c.Provider).Returns(cajeros.Provider);
-            mockSet.As<IQueryable<Cajero>>().Setup(c => c.Expression).Returns(cajeros.Expression);
-            mockSet.As<IQueryable<Cajero>>().Setup(c => c.ElementType).Returns(cajeros.ElementType);
-            mockSet.As<IQueryable<Cajero>>().Setup(c => c.GetEnumerator).Returns(cajeros.GetEnumerator());
+            mockSet.As<IQueryable<Administrador>>().Setup(c => c.Provider).Returns(cajeros.Provider);
+            mockSet.As<IQueryable<Administrador>>().Setup(c => c.Expression).Returns(cajeros.Expression);
+            mockSet.As<IQueryable<Administrador>>().Setup(c => c.ElementType).Returns(cajeros.ElementType);
+            mockSet.As<IQueryable<Administrador>>().Setup(c => c.GetEnumerator).Returns(cajeros.GetEnumerator());
 
             var mockContext = new Mock<Context>();
             mockContext.Setup(m => m.Cajeros).Return(mockSet.Object);*/

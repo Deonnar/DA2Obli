@@ -52,15 +52,26 @@ namespace TodoPagos.LogicaRepositorio
             return pagos;
         }
 
-       /* public static IEnumerable<Pago> ObtenerPagoEntreFechasPorProveedor(DateTime inicio, DateTime fin)
+        public static long ObtenerPagoEntreFechasPorProveedor(DateTime inicio, DateTime fin)
         {
+            long ganancias = 0;
             BdContexto contexto = BdContexto.GetInstance();
-            var pagos = (from p in contexto.Pagos
-                         where p.FechaEmision >= inicio && p.FechaEmision <= fin 
-                         group p by p.Proveedor.NombreProveedor
-                         into total
-                         select new { Id = total.Key, Count = total.Sum(p => p.ImporteFactura)});
-            return pagos;
-        }*/
+            /*   var pagosEnUnPeriodo = (from p in contexto.Pagos
+                            where p.FechaEmision >= inicio && p.FechaEmision <= fin 
+                            group p by p.Proveedor.NombreProveedor
+                            into total
+                            select new { Id = total.Key, Count = total.Sum(p => p.ImporteFactura)});*/
+
+            var pagosEnUnPeriodo = (from p in contexto.Pagos
+                                    where p.FechaEmision >= inicio && p.FechaEmision <= fin
+                                    select p);
+
+            foreach (Pago pago in pagosEnUnPeriodo)
+            {
+                ganancias += pago.ImporteFactura;
+            }
+
+            return ganancias;
+        }
     }
 }

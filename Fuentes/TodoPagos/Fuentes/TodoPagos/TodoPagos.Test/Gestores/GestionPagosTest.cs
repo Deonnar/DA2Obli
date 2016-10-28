@@ -5,38 +5,41 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TodoPagos.Dominio.Entidades.Pagos;
-using TodoPagos.Repositorio;
+using TodoPagos.Dominio.Entidades.Proveedores;
+
+using TodoPagos.LogicaRepositorio;
 
 namespace TodoPagos.Test.Gestores
 {
     [TestClass]
     public class GestionPagosTest
-    {
-   /*     private static Factura fac = new Factura();
+    {  
+        
+        private static Pago pago = new Pago();
+        private static Proveedor proveedor = new Proveedor();
+
         private void SetUp()
         {
-            IRepositoryPagos persistencia = new RepositoryPagos();
+            RepositorioPagos persistencia = new RepositorioPagos();
+            proveedor.NombreProveedor = "UTE";
+            proveedor.Descripcion = "Energia Electrica";
         }
-        
+
         private void CrearFactura()
         {
-            fac.NumeroFactura = "2";
-            fac.FechaVencimiento = System.DateTime.Today;
-            fac.FechaEmision = System.DateTime.Today;
-            fac.EstaPaga = false;
-            fac.Monto = 1233;
-            fac.EstaBorrado = false;
+            pago.FechaVencimiento = System.DateTime.Today;
+            pago.FechaEmision = System.DateTime.Today;
+            pago.EstaPaga = false;
+            pago.Proveedor = proveedor;
+  
         }
-
-
+       /* 
         [TestMethod]
         public void NuevaFacturaTest()
         {
             SetUp();
             CrearFactura();
-            persistencia.AddElement(fac);
-            Factura facturaSeleccionada = persistencia.ObtenerFactura(fac.FacturaId);
-
+  
             string numeroFactura = "2";
             Assert.AreEqual(numeroFactura, facturaSeleccionada.NumeroFactura);
 

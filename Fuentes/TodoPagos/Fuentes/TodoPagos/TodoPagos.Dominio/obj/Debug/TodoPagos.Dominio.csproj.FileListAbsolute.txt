@@ -43,4 +43,3 @@ C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoP
 C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPagos.Dominio\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPagos.Dominio\bin\Debug\es\EntityFramework.resources.dll
 C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPagos.Dominio\bin\Debug\es\EntityFramework.SqlServer.resources.dll
-C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\Fuentes\TodoPagos\TodoPagos.Dominio\obj\Debug\TodoPagos.Dominio.csprojResolveAssemblyReference.cache

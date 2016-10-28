@@ -10,12 +10,12 @@ namespace TodoPagos.Repositorio.Entidades.Usuario
 {
     interface IRepositoryCajeros
     {
-        void AgregarCajero(Cajero cajero);
+        void AgregarCajero(Administrador cajero);
 
-        Cajero ObtenerCajero(Cajero cajero);
+        Administrador ObtenerCajero(Administrador cajero);
 
-        void BorrarCajero(Cajero cajero);
+        void BorrarCajero(Administrador cajero);
 
-        void ActualizarCajero(Cajero cajero);
+        void ActualizarCajero(Administrador cajero);
     }
 }

@@ -7,7 +7,7 @@ namespace TodoPagos.Repositorio
     public class UnitOfWork : IUnitOfWork
     {
         private ContextoTodoPagos contexto;
-        public Repository<Cajero> repositorioCajeros;
+        public Repository<Administrador> repositorioCajeros;
         private Repository<Usuario> repositorioUsuarios;
 
         //constructor
@@ -34,13 +34,13 @@ namespace TodoPagos.Repositorio
             this.contexto = contexto; 
         }
 
-        public Repository<Cajero> RepositorioCajeros
+        public Repository<Administrador> RepositorioCajeros
         {
             get
             {
                 if(this.RepositorioCajeros == null)
                 {
-                    this.repositorioCajeros = new Repository<Cajero>(contexto);
+                    this.repositorioCajeros = new Repository<Administrador>(contexto);
                 }
 
                 return this.repositorioCajeros;

@@ -1,0 +1,1 @@
+C:\Users\Emiliano\Documents\Todo_Pagos\Fuentes\TodoPagos\Fuentes\TodoPagos\RestApiWeb\obj\Debug\TodoPagos.RestApiWeb.csprojResolveAssemblyReference.cache

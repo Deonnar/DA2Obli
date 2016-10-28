@@ -6,28 +6,28 @@ namespace TodoPagos.Repositorio.Entidades.Usuario
 {
     public class RepositoryCajeros : IRepositoryCajeros
     {
-        private Repository<Cajero> repositorio;
+        private Repository<Administrador> repositorio;
 
         public RepositoryCajeros(ContextoTodoPagos contexto)
         {
         }
 
-        public void AgregarCajero(Cajero cajero)
+        public void AgregarCajero(Administrador cajero)
         {
             repositorio.Agregar(cajero);
         }
         
-        public Cajero ObtenerCajero(Cajero cajero)
+        public Administrador ObtenerCajero(Administrador cajero)
         {
             return repositorio.Obtener(cajero);
         }
 
-        public void BorrarCajero(Cajero cajero)
+        public void BorrarCajero(Administrador cajero)
         {
             repositorio.Borrar(cajero);
         }
 
-        public void ActualizarCajero(Cajero cajero)
+        public void ActualizarCajero(Administrador cajero)
         {
             repositorio.Actualizar(cajero);
         }
