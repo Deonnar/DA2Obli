@@ -60,6 +60,7 @@
     <Compile Include="RepositorioLogin.cs" />
     <Compile Include="RepositorioPagos.cs" />
     <Compile Include="RepositorioProveedores.cs" />
+    <Compile Include="RepositorioPuntos.cs" />
     <Compile Include="RepositorioUsuarios.cs" />
   </ItemGroup>
   <ItemGroup>

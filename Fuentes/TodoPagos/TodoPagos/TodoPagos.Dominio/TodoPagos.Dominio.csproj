@@ -56,6 +56,7 @@
     <Compile Include="Entidades.Pagos\Pago.cs" />
     <Compile Include="Entidades.Proveedores\CamposProveedores.cs" />
     <Compile Include="Entidades.Proveedores\Proveedor.cs" />
+    <Compile Include="Entidades.Puntos\Puntos.cs" />
     <Compile Include="Entidades.Usuarios\Administrador.cs" />
     <Compile Include="Entidades.Usuarios\Cajero.cs" />
     <Compile Include="Entidades.Usuarios\Usuario.cs" />

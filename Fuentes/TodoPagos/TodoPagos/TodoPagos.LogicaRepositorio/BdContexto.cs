@@ -19,7 +19,8 @@ namespace TodoPagos.Dominio
         public DbSet<TodoPagos.Dominio.Entidades.Pagos.Cliente> Clientes { get; set; }
         public DbSet<TodoPagos.Dominio.Entidades.Usuarios.Cajero> Cajeros { get; set; }
         public DbSet<TodoPagos.Dominio.Entidades.Usuarios.Administrador> Administradores { get; set; }
-        
+        public DbSet<TodoPagos.Dominio.Entidades.Puntos.Puntos> Puntos { get; set; }
+
         public static BdContexto GetInstance()
         {
             if (contexto == null)

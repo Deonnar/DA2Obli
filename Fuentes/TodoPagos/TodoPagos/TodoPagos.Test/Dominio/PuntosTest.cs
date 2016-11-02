@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using TodoPagos.Dominio.Entidades.Pagos;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TodoPagos.Dominio.Entidades.Proveedores;
+using TodoPagos.Dominio.Entidades.Puntos;
 
 
 namespace TodoPagos.Test.Dominio
@@ -17,7 +18,7 @@ namespace TodoPagos.Test.Dominio
         public void TestCrearPuntos()
         {
             Puntos puntos = new Puntos();
-            puntos.ValorPunto = 100;
+            puntos.ValorPunto = 3;
             Assert.Equals(100, puntos.ValorPunto);
         }
 
@@ -26,7 +27,6 @@ namespace TodoPagos.Test.Dominio
         {
             Proveedor p = new Proveedor();
             Puntos puntos = new Puntos();
-            puntos.listaNegra.add(p);
             Assert.Equals(100, puntos.ValorPunto);
         }
 

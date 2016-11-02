@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TodoPagos.Dominio.Enumerados
+namespace TodoPagos.Dominio.Entidades.Pagos
 {
     public class TiposPago
     {

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
-using TodoPagos.Dominio.Entidades.Pagos.Cliente;
+using TodoPagos.Dominio.Entidades.Pagos;
 
 namespace TodoPagos.Dominio.Entidades.Puntos
 {
@@ -14,8 +14,8 @@ namespace TodoPagos.Dominio.Entidades.Puntos
         [Key]
         [Column("ID")]
         public int PuntosId { get; set; }
-        public string ValorPunto { get; set; }
+        public int ValorPunto { get; set; }
+        
 
-        public List<Pago> listaPagos { get; set; }
     }
 }

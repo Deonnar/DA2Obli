@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using TodoPagos.Dominio.Entidades.Proveedores;
-using TodoPagos.Dominio.Entidades.Pagos; 
+using TodoPagos.Dominio.Entidades.Pagos;
+using TodoPagos.Dominio.Entidades.Puntos;
 
 namespace TodoPagos.Dominio.Entidades.Pagos
 {
@@ -21,7 +22,7 @@ namespace TodoPagos.Dominio.Entidades.Pagos
 
         public DateTime FechaEmision { get; set; }
 
-        //public TiposPago TipoPago { get; set; }
+        public TiposPago TipoPago { get; set; }
   
         public long ImporteFactura { get; set; }
 
@@ -30,5 +31,7 @@ namespace TodoPagos.Dominio.Entidades.Pagos
         public Proveedor Proveedor { get; set; }
 
         public Cliente Cliente { get; set; }
+
+        public Puntos.Puntos ValorActualDelPunto { get; set; }
     }
 }
