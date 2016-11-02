@@ -11,7 +11,13 @@ namespace TodoPagos.LogicaRepositorio
 {
     public class RepositorioPuntos
     {
-     
+        public static void Agregar(int id)
+        {
+
+            BdContexto contexto = BdContexto.GetInstance();
+            Usuario usuario = contexto.Usuarios.Include("Puntos").ToList().Find(p => p.UsuarioId == id);
+            contexto.SaveChanges();
+        }
         public static IEnumerable<Puntos> ObtenerPuntos()
         {
             BdContexto contexto = BdContexto.GetInstance();
@@ -26,6 +32,15 @@ namespace TodoPagos.LogicaRepositorio
 
             contexto.Puntos.Add(unPunto);
             contexto.SaveChanges();
+        }
+        public static Puntos ObtenerPuntos(int idPunto)
+        {
+            BdContexto contexto = BdContexto.GetInstance();
+            var puntos = (from p in contexto.Puntos
+                            where p.PuntosId == idPunto
+                            orderby p.PuntosId
+                            select p);
+            return puntos.First();
         }
 
         public static void Modificar(int id, Puntos p)

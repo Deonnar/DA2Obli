@@ -241,6 +241,7 @@
     <Compile Include="Controllers\ClientesController.cs" />
     <Compile Include="Controllers\LogInController.cs" />
     <Compile Include="Controllers\PagosController.cs" />
+    <Compile Include="Controllers\PuntosController.cs" />
     <Compile Include="Controllers\UsuariosController.cs" />
     <Compile Include="Controllers\ProveedoresController.cs" />
     <Compile Include="Global.asax.cs">
