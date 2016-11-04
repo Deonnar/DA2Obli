@@ -8,7 +8,6 @@ using System.ComponentModel.DataAnnotations;
 
 namespace TodoPagos.Dominio.Entidades.Proveedores
 {
-
     [Table("ListaNegra")]
     public class ProveedoresBloqueados
     {

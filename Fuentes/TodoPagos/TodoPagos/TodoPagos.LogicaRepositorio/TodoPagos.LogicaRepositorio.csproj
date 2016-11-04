@@ -58,8 +58,10 @@
     <Compile Include="RepositorioCamposFactura.cs" />
     <Compile Include="RepositorioClientes.cs" />
     <Compile Include="RepositorioLogin.cs" />
+    <Compile Include="RepositorioLogs.cs" />
     <Compile Include="RepositorioPagos.cs" />
     <Compile Include="RepositorioProveedores.cs" />
+    <Compile Include="RepositorioProveedoresBloqueados.cs" />
     <Compile Include="RepositorioPuntos.cs" />
     <Compile Include="RepositorioUsuarios.cs" />
   </ItemGroup>

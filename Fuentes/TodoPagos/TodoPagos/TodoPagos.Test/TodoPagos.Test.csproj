@@ -66,6 +66,7 @@
     <Compile Include="Dominio\AdministradorTest.cs" />
     <Compile Include="Dominio\CamposFacturaTest.cs" />
     <Compile Include="Dominio\PagoTest.cs" />
+    <Compile Include="Dominio\ProveedoresBloqueadosTest.cs" />
     <Compile Include="Dominio\PuntosTest.cs" />
     <Compile Include="Gestores\GestionUsuariosTest.cs" />
     <Compile Include="Gestores\GestionPagosTest.cs" />

@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="../Scripts/angular.min.js"></script>
+    <script src="../Scripts/app/apps.js"></script>
+    <script src="../Scripts/pagos/pagosController.js"></script>
+</head>
+
+    <body ng-app="Tresana">
+        <div ng-controller="Pagos.Controller as pagosCtrl">
+            <div ng-repeat="p in pagosCtrl.pagos">
+                <h2>Pago {{p.Name}}</h2>
+                <p>Description:</p>
+            </div>
+        </div>
+    </body>
+</body>
+</html>

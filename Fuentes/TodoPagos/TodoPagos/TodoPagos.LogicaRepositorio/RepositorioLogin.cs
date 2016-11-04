@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 using TodoPagos.Dominio.Entidades.Usuarios;
 using TodoPagos.Dominio.Entidades.Pagos;
 using TodoPagos.Dominio;
-
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace TodoPagos.LogicaRepositorio
 {
