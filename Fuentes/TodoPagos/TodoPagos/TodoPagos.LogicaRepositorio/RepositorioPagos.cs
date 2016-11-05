@@ -33,10 +33,6 @@ namespace TodoPagos.LogicaRepositorio
             contexto.Pagos.Add(unPago);
             contexto.SaveChanges();
         }
-
-
-
-
         public static Pago ObtenerPago(int id)
         {
             BdContexto contexto = BdContexto.GetInstance();
@@ -45,6 +41,15 @@ namespace TodoPagos.LogicaRepositorio
                             select u);
             return pagos.First();
         }
+    
+        public static void EliminarPago(int id)
+        {
+            BdContexto contexto = BdContexto.GetInstance();
+            var pagos = (from u in contexto.Pagos
+                         where u.PagoId == id
+                         select u);           
+        }
+
 
         public static IEnumerable<Pago> ObtenerPagoEntreFechas(DateTime inicio, DateTime fin)
         {

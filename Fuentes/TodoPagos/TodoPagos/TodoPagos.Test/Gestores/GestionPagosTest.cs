@@ -29,11 +29,7 @@ namespace TodoPagos.Test.Gestores
             pago.FechaVencimiento = System.DateTime.Today.AddDays(3);
             return pago;
         }
-    
           
-
-
-
         [TestMethod]
         public void NuevaPagoTest()
         {

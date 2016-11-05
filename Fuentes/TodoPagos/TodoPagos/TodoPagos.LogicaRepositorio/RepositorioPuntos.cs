@@ -33,7 +33,7 @@ namespace TodoPagos.LogicaRepositorio
             contexto.Puntos.Add(unPunto);
             contexto.SaveChanges();
         }
-        public static Puntos ObtenerPuntos(int idPunto)
+        public static Puntos ObtenerPunto(int idPunto)
         {
             BdContexto contexto = BdContexto.GetInstance();
             var puntos = (from p in contexto.Puntos
