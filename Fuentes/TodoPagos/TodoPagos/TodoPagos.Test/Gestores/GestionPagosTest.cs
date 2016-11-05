@@ -5,81 +5,53 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TodoPagos.Dominio.Entidades.Pagos;
+using TodoPagos.LogicaRepositorio;
+using TodoPagos.Dominio;
+
+
 
 namespace TodoPagos.Test.Gestores
 {
     [TestClass]
     public class GestionPagosTest
     {
-   /*     private static Factura fac = new Factura();
-        private void SetUp()
+        private static Pago pago = new Pago();
+        public void SetUp()
         {
-            IRepositoryPagos persistencia = new RepositoryPagos();
-        }
-        
-        private void CrearFactura()
-        {
-            fac.NumeroFactura = "2";
-            fac.FechaVencimiento = System.DateTime.Today;
-            fac.FechaEmision = System.DateTime.Today;
-            fac.EstaPaga = false;
-            fac.Monto = 1233;
-            fac.EstaBorrado = false;
+            BdContexto contexto = BdContexto.GetInstance();          
+
         }
 
-
-        [TestMethod]
-        public void NuevaFacturaTest()
+        private Pago CrearPago()
         {
-            SetUp();
-            CrearFactura();
-            persistencia.AddElement(fac);
-            Factura facturaSeleccionada = persistencia.ObtenerFactura(fac.FacturaId);
-
-            string numeroFactura = "2";
-            Assert.AreEqual(numeroFactura, facturaSeleccionada.NumeroFactura);
-
-            Dispose();
+            Pago pago = new Pago();
+            pago.FechaEmision = System.DateTime.Today;
+            pago.FechaVencimiento = System.DateTime.Today.AddDays(3);
+            return pago;
         }
-
-        [TestMethod]
-        public void BorrarFacturaTest()
-        {
-            SetUp();
-            CrearFactura();
-            persistencia.DeleteElement(fac);
-
-            Factura facturaSeleccionada = persistencia.ObtenerFactura(fac.FacturaId);
-        
-            Assert.IsTrue(facturaSeleccionada.EstaBorrado);
-            Dispose();
-        }
-
-        [TestMethod]
-        public void ModificarFacturaTest()
-        {
-            SetUp();
-            CrearFactura();
-            persistencia.Borrar(fac);
-            Factura facturaSeleccionada = persistencia.ObtenerFactura(fac.FacturaId);
-            // string numeroFactura = "20";
-            int numeroFactura = 2;
-            Assert.IsTrue(numeroFactura, facturaSeleccionada.FacturaId);
-            Dispose();
-        }
-
-        [TestMethod]
-        public void ObtenerFactura()
-        {
-            SetUp();
-            CrearFactura();
-            persistencia.Borrar(fac);
-            Factura facturaSeleccionada = persistencia.ObtenerFactura(fac.FacturaId);
-            int numeroFactura = 2;
-            Assert.IsTrue(fac, facturaSeleccionada);
-            Dispose();
-            
-        }
-    */}
     
+          
+
+
+
+        [TestMethod]
+        public void NuevaPagoTest()
+        {
+            SetUp();
+            Pago pago = CrearPago();
+            RepositorioPagos.Agregar(pago);
+            Assert.Equals(pago, RepositorioPagos.ObtenerPago(pago.PagoId));
+        }
+
+        [TestMethod]
+        public void EliminarPagoTest()
+        {
+            SetUp();
+            Pago pago = CrearPago();
+            RepositorioPagos.Eliminar(pago);
+            Assert.IsNull(RepositorioPagos.ObtenerPago(pago.PagoId));
+        }
+
+
+    }
 }

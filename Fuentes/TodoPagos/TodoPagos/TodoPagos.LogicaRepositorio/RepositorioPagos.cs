@@ -34,6 +34,9 @@ namespace TodoPagos.LogicaRepositorio
             contexto.SaveChanges();
         }
 
+
+
+
         public static Pago ObtenerPago(int id)
         {
             BdContexto contexto = BdContexto.GetInstance();

@@ -83,6 +83,14 @@
       <Project>{e6a5179c-27d8-45ca-8010-6a2da091247a}</Project>
       <Name>TodoPagos.LogicaRepositorio</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TodoPAgos.RestApi\TodoPagos.RestApi.csproj">
+      <Project>{7d639a36-c2ea-410e-8c2c-e9f59e353eee}</Project>
+      <Name>TodoPagos.RestApi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TodoPagos.Seguridad\TodoPagos.Seguridad.csproj">
+      <Project>{08c960a9-3126-4474-9b33-680ec14adabf}</Project>
+      <Name>TodoPagos.Seguridad</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

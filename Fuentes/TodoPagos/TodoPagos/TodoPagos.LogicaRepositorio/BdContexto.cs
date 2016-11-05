@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 using System.Data.Entity;
 using TodoPagos.Dominio;
 
-
-namespace TodoPagos.Dominio
+namespace TodoPagos.LogicaRepositorio
+//namespace TodoPagos.Dominio
 {
     public class BdContexto: DbContext
     {
