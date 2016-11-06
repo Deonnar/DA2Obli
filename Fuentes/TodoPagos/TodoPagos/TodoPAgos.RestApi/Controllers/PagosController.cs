@@ -123,7 +123,6 @@ namespace TodoPAgos.RestApi.Controllers
         }
 
         [Route("api/Pagos/{id}")]
-
         public IHttpActionResult Delete(int id)
         {
             RepositorioPagos.EliminarPago(id);

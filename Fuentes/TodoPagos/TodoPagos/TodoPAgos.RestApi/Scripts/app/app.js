@@ -5,45 +5,53 @@
 
     app.config(function ($routeProvider, $locationProvider) {
         $routeProvider
-        
+
+        //menu principal
+        .when('/index', {
+            templateUrl: 'index.html',
+           // controller: 'Administrador.Controller'
+        })
+
         //admin
         .when('/NuevoAdmin', {
-            templateUrl: 'app/admins/adminsMenu.html',
-            controller: 'Admins.Controller'
+            templateUrl: 'app/administradores/NuevoAdministrador.html',
+            controller: 'Administrador.Controller'
         })
         
         .when('/ModifcarAdmin', {
-            templateUrl: 'app/admins/adminsMenu.html',
-            controller: 'Admins.Controller'
+            templateUrl: 'app/administradores/ModificarAdministrador.html',
+            controller: 'Administrador.Controller'
         })
         
         .when('/BajaAdmin', {
-            templateUrl: 'app/admins/adminsMenu.html',
-            controller: 'Admins.Controller'
+            templateUrl: 'app/administradores/EliminarAdministrador.html',
+            controller: 'Administrador.Controller'
         })
     
         //pago
         .when('/NuevoPago', {
-            templateUrl: 'app/admins/adminsMenu.html',
-            controller: 'Admins.Controller'
+            templateUrl: 'app/pagos/ad.html',
+            controller: 'Pagos.Controller'
         })
         
         .when('/ModifcarPago', {
-            templateUrl: 'app/admins/adminsMenu.html',
-            controller: 'Admins.Controller'
+            templateUrl: 'app/pagos/adminMenu.html',
+            controller: 'Pagos.Controller'
         })
         
         .when('/BajaPago', {
-            templateUrl: 'app/admins/adminsMenu.html',
-            controller: 'Admins.Controller'
+            templateUrl: 'app/pagos/adminsMenu.html',
+            controller: 'Pagos.Controller'
         })
-        //Puntos
+
+        //puntos
         .when('/Puntos', {
             templateUrl: 'app/admins/adminsMenu.html',
             controller: 'Admins.Controller'
         })
-        //Proveedores
-        .when('/Puntos', {
+
+        //CamposFactura
+        .when('/camposfactura', {
             templateUrl: 'app/admins/adminsMenu.html',
             controller: 'Admins.Controller'
         })

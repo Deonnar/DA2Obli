@@ -368,6 +368,7 @@
     <Content Include="Views\register\register.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="app\pagos\" />
     <Folder Include="App_Data\" />
     <Folder Include="Scripts\js\" />
     <Folder Include="Views\Usuarios\" />

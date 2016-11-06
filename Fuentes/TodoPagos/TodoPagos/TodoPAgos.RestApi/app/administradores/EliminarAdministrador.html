@@ -1,17 +1,6 @@
-﻿<!DOCTYPE html>
-<html ng-app="TodoPagos">
-
-<head>
-    <meta charset="utf-8" />
-    <title>Todo Pagos</title>
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
-    <link href="//cdn.rawgit.com/cornflourblue/angular-registration-login-example/master/app-content/app.css" rel="stylesheet" />
-</head>
-<body>
-    <h1>Eliminar Administradores</h1>
-    <div ng-controller="EliminarAdministrador.Controller">
+﻿    <h1>Eliminar Administradores</h1>
+    <div ng-controller="administrador.Controller">
         <div class="jumbotron">
-
             <div class="container">
                     <div ng-class="{ 'alert': flash, 'alert-success': flash.type === 'success', 'alert-danger': flash.type === 'error' }" ng-if="flash" ng-bind="flash.message"></div>
                     <!---div ng-view></!--div-->
@@ -52,6 +41,3 @@
     <script src="//code.angularjs.org/1.2.20/angular.js"></script>
     <script src="//code.angularjs.org/1.2.20/angular-route.js"></script>
     <script src="//code.angularjs.org/1.2.13/angular-cookies.js"></script>
-
-</body>
-</html>

@@ -15,7 +15,7 @@ namespace TodoPAgos.RestApi.Controllers
 {
     public class ClientesController : ApiController
     {
-        public ClientesController() {  }
+        public ClientesController() {}
 
         // GET api/values
         [HttpGet]

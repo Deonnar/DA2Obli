@@ -1,13 +1,4 @@
-﻿<!DOCTYPE html>
-<html ng-app="TodoPagos">
-<head>
-    <meta charset="utf-8" />
-    <title>Todo Pagos</title>
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
-    <link href="//cdn.rawgit.com/cornflourblue/angular-registration-login-example/master/app-content/app.css" rel="stylesheet" />
-</head>
-<body>
-    <h1>Nuevo Pago</h1>
+﻿    <h1>Nuevo Pago</h1>
     <div ng-controller="NuevoPago.Controller">
         <div class="jumbotron">
             <div class="container">
@@ -15,9 +6,7 @@
                     <div ng-class="{ 'alert': flash, 'alert-success': flash.type === 'success', 'alert-danger': flash.type === 'error' }" ng-if="flash" ng-bind="flash.message"></div>
                     <!---div ng-view></!--div-->
                     <div class="col-md-6 col-md-offset-3">
-
-                        <form id="pagoForm" ng-submit="submit()">
-
+                        <form id="pagoForm" ng-submit="NuevoPago()">
                             <div class="form-group">
                                 <label for="fechaVencimiento">Fecha Vencimiento:</label>
                                 <input type="text" name="fechaVencimiento" class="form-control" ng-model="fechaVencimiento" required />
@@ -60,6 +49,3 @@
         <script src="//code.angularjs.org/1.2.20/angular.js"></script>
         <script src="//code.angularjs.org/1.2.20/angular-route.js"></script>
         <script src="//code.angularjs.org/1.2.13/angular-cookies.js"></script>
-
-</body>
-</html>
