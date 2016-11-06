@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html ng-app="tresana">
+
+<head>
+    <meta charset="utf-8" />
+    <title>AngularJS User Registration and Login Example</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+    <link href="//cdn.rawgit.com/cornflourblue/angular-registration-login-example/master/app-content/app.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>Modificar Administradores</h1>
+    <div ng-controller="ModificarAdministrador.Controller">
+        <div class="jumbotron">
+
+            <div class="container">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <div ng-class="{ 'alert': flash, 'alert-success': flash.type === 'success', 'alert-danger': flash.type === 'error' }" ng-if="flash" ng-bind="flash.message"></div>
+                    <!---div ng-view></!--div-->
+                   
+                        <table ng-table="tablaAdministradores" name="tablaAdministradores" class="table">
+                            <tr>
+                                <th>Id</th>
+                                <th>Nombre</th>
+                                <th>Apellido</th>
+                                <th>Tipo</th>
+                                <th> </th>
+                                <th> </th>
+
+                            </tr>
+                            <tr ng-repeat="usuario in usuarios">
+                                <td>{{usuario.Id}}</td>
+                                <td>{{usuario.Nombre}}</td>
+                                <td>{{usuario.Apellido}}</td>
+                                <td>{{usuario.Tipo}}</td>
+
+                                <td>
+                                    <div>
+                                        <input type="button" value="Modificar" class="btn btn-info" ng-click="eliminar(usuario.Id)" />
+                                    </div>
+                                </td>
+                               
+                            </tr>
+                        </table>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="//code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="//code.angularjs.org/1.2.20/angular.js"></script>
+    <script src="//code.angularjs.org/1.2.20/angular-route.js"></script>
+    <script src="//code.angularjs.org/1.2.13/angular-cookies.js"></script>
+
+</body>
+</html>

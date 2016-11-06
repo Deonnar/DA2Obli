@@ -2,17 +2,17 @@
     'use-strict';
 
     angular.module('Tresana')
-        .controller('altaAdministradores.Controller', function ($scope, $http, $timeout) {
+        .controller('ModificarAdministrador.Controller', function ($scope, $http, $timeout) {
             $("#error").hide();
             $("#success").hide();
 
-            $http.get("/api/usuarios", {
+            $http.get("/api/administradores", {
                 headers: { 'token': '1' }
             }).success(function (data, status, headers, config) {
                 $scope.usuarios = data;
             }).error(function (data, status, headers, config) {
                 $("#error").show();
-                $scope.msgerror = "Oops... something went wrong";
+                $scope.msgerror = "Error";
                 $timeout(function () { $scope.msgerror = ""; $("alert alert-danger").hide(); }, 3000);
             });
 
@@ -21,17 +21,18 @@
                     "Nombre": $scope.nombre,
                     "Apellido": $scope.apellido,
                     "Contrasenia": $scope.contrasenia,
-                    "Clave": $scope.clave,
-                    "Tipo": $scope.tipo
+                    "Clave": $scope.contrasenia,
+                    "Direccion": $scope.direccion,
+                    "NombreUsuario": $scope.nombreusuario
                 };
 
                 $http.post('api/administradores', data, {
-               //     headers: { 'token': '1' }
+                    //     headers: { 'token': '1' }
                 })
                 .success(function (data, status, headers, config) {
                     $scope.msgsuccess = "Administrador agregado!";
                     $("#success").show();
-                    var form = document.getElementById("usuarioForm");
+                    var form = document.getElementById("usuarioForm"); // welche Form ist richtig 
                     form.reset();
                 })
                 .error(function (data, status, header, config) {

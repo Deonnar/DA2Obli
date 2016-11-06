@@ -1,6 +1,4 @@
-﻿
-
-       <!DOCTYPE html>
+﻿       <!DOCTYPE html>
         <html ng-app="tresana">
       
         <head>
@@ -11,7 +9,7 @@
         </head>
         <body>
             <h1>Nuevo Administrador</h1>
-            <div ng-controller="altaAdministradores.Controller">
+            <div ng-controller="NuevoAdministrador.Controller">
                 <div class="jumbotron">
 
                     <div class="container">
@@ -20,34 +18,31 @@
                             <!---div ng-view></!--div-->
                             <div class="col-md-6 col-md-offset-3">
 
-                                <form id="pagoForm" ng-submit="submit()">
+                                <form id="NuevoAdministradorForm" ng-submit="submit()">
                                     <div class="form-group">
-                                        <label for="Nombre">Nombre:</label>
+                                        <label for="nombre">Nombre:</label>
                                         <input type="text" name="nombre" class="form-control" ng-model="nombre" required />
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="Proveedor">Contraseña:</label>
+                                        <label for="contraseña">Contraseña:</label>
                                         <input type="text" name="contraseña" class="form-control" ng-model="contraseña" required />
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="tipo">Nombre Usuario:</label>
+                                        <label for="nombreusuario">Nombre Usuario:</label>
                                         <input type="text" name="nombreusuario" class="form-control" ng-model="nombreusuario" required />
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="importe">Apellido:</label>
+                                        <label for="apellido">Apellido:</label>
                                         <input type="text" name="apellido" class="form-control" ng-model="apellido" required />
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="cliente">Direccion:</label>
+                                        <label for="direccion">Direccion:</label>
                                         <input type="text" name="direccion" class="form-control" ng-model="direccion" />
                                     </div>
-
-
-
                                     <div>
                                         <input type="submit" name="agregar" value="Agregar" class="btn btn-default" />
                                     </div>
