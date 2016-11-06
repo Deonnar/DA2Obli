@@ -22,7 +22,7 @@ namespace TodoPagos.LogicaRepositorio
 
         public static IEnumerable<CamposFactura> ObtenerCamposFacturas()
         {
-            agregarDatos();
+           // agregarDatos();
             BdContexto contexto = BdContexto.GetInstance();
             var campos = (from u in contexto.CamposFacturas
                             select u);
@@ -48,8 +48,31 @@ namespace TodoPagos.LogicaRepositorio
         private static void agregarDatos()
         {
             BdContexto contexto = BdContexto.GetInstance();
-                      
-             Cliente cliente = new Cliente();
+
+            Administrador admin = new Administrador();
+
+            admin.Apellido = "Perez";
+            admin.Direccion = "Rivera 13";
+            admin.Nombre = "Juan";
+            admin.NombreUsuario = "jperez";
+  
+            contexto.Administradores.Add(admin);
+            contexto.SaveChanges();
+
+
+
+            Administrador admin2 = new Administrador();
+
+            admin2.Apellido = "Perez";
+            admin2.Direccion = "Rivera 13";
+            admin2.Nombre = "Juan";
+            admin2.NombreUsuario = "jperez";
+
+            contexto.Administradores.Add(admin2);
+            contexto.SaveChanges();
+
+
+            Cliente cliente = new Cliente();
 
              cliente.Email = "test@gmail.com";
              cliente.Direccion = "Rivera 123";

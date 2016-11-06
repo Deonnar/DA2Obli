@@ -1,37 +1,36 @@
 ﻿(function () {
     'use-strict';
 
-    angular.module('Tresana')
-        .controller('NuevoPago.Controller', function ($scope, $http, $timeout) {
+    angular.module('TodoPagos')
+        .controller('Pago.Controller', function ($scope, $http, $timeout) {
             $("#error").hide();
             $("#success").hide();
 
             $http.get("/api/pagos", {
                // headers: { 'token': '1' }
             }).success(function (data, status, headers, config) {
-                $scope.usuarios = data;
+                $scope.pagos = data;
             }).error(function (data, status, headers, config) {
                 $("#error").show();
                 $scope.msgerror = "Error! Reintente más tarde";
-                $timeout(function () { $scope.msgerror = ""; $("alert alert-danger").hide(); }, 3000);
+                $timeout(function () { $scope.msgerror = ""; $("alert alert-danger").hide(); }, 2000);
             });
 
             $scope.submit = function () {
                 var data = {
-                    "Nombre": $scope.
-                    "Apellido": $scope.apellido,
-                    "Contrasenia": $scope.contrasenia,
-                    "Clave": $scope.clave,
-                    "Tipo": $scope.tipo
+                    "Importe": $scope.importe,
+                    "Cliente": $scope.cliente,
+                    "Proveedor": $scope.proveedor,
+                    "Forma": $scope.forma
                 };
 
-                $http.post('api/usuarios', data, {
-                    headers: { 'token': '1' }
+                $http.post('api/pagos', data, {
+               //     headers: { 'token': '1' }
                 })
                 .success(function (data, status, headers, config) {
-                    $scope.msgsuccess = "Usuario agregado exitosamente!!!";
+                    $scope.msgsuccess = "Pago agregado exitosamente!!!";
                     $("#success").show();
-                    var form = document.getElementById("usuarioForm");
+                    var form = document.getElementById("pagosForm");
                     form.reset();
                 })
                 .error(function (data, status, header, config) {

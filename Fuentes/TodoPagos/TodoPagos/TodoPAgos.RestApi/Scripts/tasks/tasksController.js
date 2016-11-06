@@ -1,16 +1,16 @@
 ﻿(function() {
     'use strict';
 
-    var tresanaApp = angular.module('Tresana');
+    var TodoPagosApp = angular.module('TodoPagos');
 
-    tresanaApp.controller('Tasks.Controller', function() {
+    TodoPagosApp.controller('Tasks.Controller', function() {
         var ctrl = this;
 
         ctrl.tasks = [
             {
                 Id: 3,
                 Name: "Crear Proyecto Angular",
-                Description: "Crear el proyecto Angular dentro del Proyecto de Tresana.Web.Api para enseñar como utlizar la librería",
+                Description: "Crear el proyecto Angular dentro del Proyecto de TodoPagos.Web.Api para enseñar como utlizar la librería",
                 Priority: 1,
                 StartDate: new Date("2016-05-11T19:00:00"),
                 FinishDate: null,

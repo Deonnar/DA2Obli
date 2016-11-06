@@ -1,9 +1,9 @@
 ﻿<!DOCTYPE html>
-<html ng-app="tresana">
+<html ng-app="TodoPagos">
 
 <head>
     <meta charset="utf-8" />
-    <title>AngularJS User Registration and Login Example</title>
+    <title>Todo Pagos</title>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
     <link href="//cdn.rawgit.com/cornflourblue/angular-registration-login-example/master/app-content/app.css" rel="stylesheet" />
 </head>
@@ -22,28 +22,24 @@
                                 <th>Id</th>
                                 <th>Nombre</th>
                                 <th>Apellido</th>
-                                <th>Tipo</th>
-                                <th> </th>
-                                <th> </th>
-
+                                <th>Nombre Usuario</th>
+                                <th>Direccion</th>
                             </tr>
-                            <tr ng-repeat="usuario in usuarios">
-                                <td>{{usuario.Id}}</td>
-                                <td>{{usuario.Nombre}}</td>
-                                <td>{{usuario.Apellido}}</td>
-                                <td>{{usuario.Tipo}}</td>
+
+                            <tr ng-repeat="administrador in administradores">
+                                <td>{{administrador.Id}}</td>
+                                <td>{{administrador.Nombre}}</td>
+                                <td>{{administrador.Apellido}}</td>
+                                <td>{{administrador.NombreUsuario}}</td>
+                                <td>{{administrador.Direccion}}</td>
 
                                 <td>
                                     <div>
-                                        <input type="button" value="Modificar" class="btn btn-info" ng-click="eliminar(usuario.Id)" />
+                                        <input type="button" value="Modificar" class="btn btn-info" ng-click="modificar(usuario.Id)" />
                                     </div>
                                 </td>
-                               
                             </tr>
                         </table>
-
-
-
                 </div>
             </div>
         </div>

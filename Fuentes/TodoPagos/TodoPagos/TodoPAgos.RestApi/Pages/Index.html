@@ -29,7 +29,8 @@
     <script src="../Scripts/tasks/tasksController.js"></script>
     <script src="../Scripts/app/app.js"></script>
     <script src="../Scripts/tasks/tasksController.js"></script>
-
+    <link href="../Scripts/index/menu.css" rel="stylesheet" />
+    <script src="../Scripts/.js"></script>
       
     <!-- mas estilos -->
     <link rel="stylesheet" href="lib/css/general.css">
@@ -37,49 +38,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
-<body ng-app="Tresana">
+<body ng-app="TodoPagos">
    
     <div class="container" style="text-align:center">
 
         <h1>Bienvenido a Todo Pago</h1>
 
         <div ng-controller="Tasks.Controller as tasksCtrl">
-            Filter by:
-            <input type="text" ng-model="tasksCtrl.filter" />
-            Order by:
-            <select ng-model="tasksCtrl.orderBy">
-                <option value="StartDate">Start Date</option>
-                <option value="CreationDate">Creation Date</option>
-            </select>
-            <div ng-repeat="task in tasksCtrl.tasks | filter: tasksCtrl.filter| orderBy: tasksCtrl.orderBy">
-                <h2>SE Name: {{task.Name}}</h2>
-                <p>ZZZZZZ   sebita   ption: {{task.Description}}</p>
-                <p>Creation Date: {{tasksCtrl.printDate(task.CreationDate)}}</p>
-                <p>Start Date: {{tasksCtrl.printDate(task.StartDate)}}</p>
-                <p>Due fff Date: {{tasksCtrl.printDate(task.DueDate)}}</p>
-            </div>
-        </div>   
+            <nav class="{{active}}" ng-click="$event.preventDefault()">
+
+                <!-- When a link in the menu is clicked, we set the active variable -->
+
+                <a href="#" class="home" ng-click="active='home'">Home</a>
+
+                <a href="#/8" class="about" ng-click="active='about'">About</a>
+                <a href="#/3" class="contact" ng-click="active='contact'">Contact</a>
+            </nav>
 
 
 
-        <div style="padding:5%; text-align:center">
-            <ul class="nav nav-pills" style="display: inline-block; list-style-type: none; text-align:center">
-                <li role="presentation" class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                        Usuarios <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li role="presentation" class="enabled"><a href="#/usuarios">Agregar</a></li>
-                        <li role="presentation" class="enabled"><a href="#/altaAdministrador.html">Eliminar</a></li>
-                    </ul>
-                </li>
-                          
-                <li role="presentation" class="enabled"><a href="#/pagos">Iniciar Pago</a></li>
-            </ul>
+
+
+
+
+            <!-- ng-show will show an element if the value in the quotes is truthful,
+             while ng-hide does the opposite. Because the active variable is not set
+             initially, this will cause the first paragraph to be visible. -->
+            <!-- Include AngularJS from Google's CDN -->
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+
+
+            <ng-view />
         </div>
     </div>
-    
-    <ng-view />
 
 </body>
 </html>

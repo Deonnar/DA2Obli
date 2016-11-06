@@ -74,5 +74,17 @@ namespace TodoPagos.LogicaRepositorio
             aModificar.Apellido = usuario.Apellido;
             contexto.SaveChanges();
         }
+
+        public static void EliminarAdministrador(int id)
+        {
+            BdContexto contexto = BdContexto.GetInstance();
+            var admin = (from u in contexto.Administradores
+                        where u.UsuarioId == id
+                        select u);
+            contexto.Administradores.Remove(admin.First());
+            contexto.SaveChanges();
+        }
+
+
     }
 }

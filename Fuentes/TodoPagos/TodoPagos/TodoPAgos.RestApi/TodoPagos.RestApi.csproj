@@ -258,6 +258,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\login\loginController.js" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -268,14 +269,18 @@
     <Content Include="Pages\Administrador\EliminarAdministrador.html" />
     <Content Include="Pages\Administrador\NuevoAdministrador.html" />
     <Content Include="Pages\Administrador\ModificarAdministrador.html" />
+    <Content Include="Pages\Pagos\EditarPago.html" />
+    <Content Include="Pages\Pagos\EliminarPago.html" />
+    <Content Include="Pages\Pagos\ModificarPago.html" />
     <Content Include="Pages\Pagos\NuevoPago.html" />
     <Content Include="Pages\Index.html" />
     <Content Include="Pages\indexTresana.html" />
     <Content Include="Pages\ingresarUsuarios.html" />
-    <Content Include="Pages\login.html" />
+    <Content Include="app\login\login.html" />
     <Content Include="Pages\Administrador\EditarAdministrador.html" />
+    <Content Include="Pages\Proveedores\Proveedores.html" />
+    <Content Include="Scripts\administradores\EliminarAdministrador.js" />
     <Content Include="Scripts\administradores\NuevoAdministradorController.js" />
-    <Content Include="Scripts\administradores\EditarAdministradorController.js" />
     <Content Include="Scripts\administradores\ModificarAdministradorController.js" />
     <Content Include="Scripts\ai.0.15.0-build58334.js" />
     <Content Include="Scripts\ai.0.15.0-build58334.min.js" />
@@ -313,6 +318,8 @@
     </Content>
     <Content Include="Scripts\angular.min.js.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\index\Index.js" />
+    <Content Include="Scripts\index\menu.css" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -321,7 +328,10 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\pagos\EliminarPagoController.js" />
+    <Content Include="Scripts\pagos\ModificarPagoController.js" />
     <Content Include="Scripts\pagos\NuevoPagoController.js" />
+    <Content Include="Scripts\proveedores\VerProveedores.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\tasks\tasksController.js" />

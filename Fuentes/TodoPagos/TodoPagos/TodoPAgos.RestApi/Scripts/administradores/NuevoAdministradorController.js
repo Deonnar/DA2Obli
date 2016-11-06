@@ -1,7 +1,7 @@
 ﻿(function () {
     'use-strict';
 
-    angular.module('Tresana')
+    angular.module('TodoPagos')
         .controller('NuevoAdministrador.Controller', function ($scope, $http, $timeout) {
             $("#error").hide();
             $("#success").hide();

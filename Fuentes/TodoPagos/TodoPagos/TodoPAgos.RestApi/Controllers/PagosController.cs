@@ -65,20 +65,6 @@ namespace TodoPAgos.RestApi.Controllers
         [Route("api/Pagos/desde/{desde}/hasta/{hasta}/Proveedor/{p}")]
         public String Get(string desde, string hasta, string p)
         {
-            /* try
-             {
-                 ValidarAcceso.TieneAccesso(Request);
-
-                 DateTime Desde = Convert.ToDateTime(desde);
-                 DateTime Hasta = Convert.ToDateTime(hasta);
-                 IEnumerable<Pago> pagos = RepositorioPagos.ObtenerPagoEntreFechas(Desde, Hasta);
-                 return pagos;
-             }
-             catch (Exception e)
-             {
-                 return null;
-             }
-             */
             try
             {
                 DateTime Desde = Convert.ToDateTime(desde);
@@ -134,7 +120,15 @@ namespace TodoPAgos.RestApi.Controllers
         {
             //no se deben modificar los pagos
             return null;
-        }     
-     
+        }
+
+        [Route("api/Pagos/{id}")]
+
+        public IHttpActionResult Delete(int id)
+        {
+            RepositorioPagos.EliminarPago(id);
+            return Ok("Se ha eliminado el pago "+ id +" correctamente");
+        }
+
     }
 }

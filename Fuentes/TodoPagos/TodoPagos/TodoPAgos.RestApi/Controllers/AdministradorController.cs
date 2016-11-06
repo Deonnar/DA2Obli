@@ -15,6 +15,8 @@ namespace TodoPAgos.RestApi.Controllers
         public AdministradorController() { }
 
         // GET api/values
+
+        [Route("api/Administradores")]
         [HttpGet]
         public IEnumerable<Administrador> Get()
         {
@@ -63,6 +65,20 @@ namespace TodoPAgos.RestApi.Controllers
             catch (Exception e)
             {
                 return BadRequest(e.Message);
+            }
+        }
+
+        [Route("api/Administradores/{id}")]
+        public IHttpActionResult Delete(int id)
+        {
+            if(RepositorioAdministrador.ObtenerAdministrador(id) != null)
+            {
+                RepositorioAdministrador.EliminarAdministrador(id);
+                return Ok("Se ha eliminado el administrador " + id + " correctamente");
+            }
+            else
+            {
+                return NotFound();
             }
         }
     }

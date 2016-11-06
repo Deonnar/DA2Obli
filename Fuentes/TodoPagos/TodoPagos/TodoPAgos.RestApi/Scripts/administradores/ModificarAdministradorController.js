@@ -1,13 +1,13 @@
 ﻿(function () {
     'use-strict';
 
-    angular.module('Tresana')
+    angular.module('TodoPagos')
         .controller('ModificarAdministrador.Controller', function ($scope, $http, $timeout) {
             $("#error").hide();
             $("#success").hide();
 
             $http.get("/api/administradores", {
-                headers: { 'token': '1' }
+             //   headers: { 'token': '1' }
             }).success(function (data, status, headers, config) {
                 $scope.usuarios = data;
             }).error(function (data, status, headers, config) {

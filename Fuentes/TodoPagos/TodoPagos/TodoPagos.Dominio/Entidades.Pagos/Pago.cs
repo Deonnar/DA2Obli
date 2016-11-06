@@ -22,7 +22,7 @@ namespace TodoPagos.Dominio.Entidades.Pagos
 
         public DateTime FechaEmision { get; set; }
 
-        public TiposPago TipoPago { get; set; }
+      //  public TiposPago TipoPago { get; set; }
   
         public long ImporteFactura { get; set; }
 

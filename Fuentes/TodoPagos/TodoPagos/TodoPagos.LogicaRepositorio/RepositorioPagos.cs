@@ -31,6 +31,7 @@ namespace TodoPagos.LogicaRepositorio
             BdContexto contexto = BdContexto.GetInstance();
                                   
             contexto.Pagos.Add(unPago);
+            
             contexto.SaveChanges();
         }
         public static Pago ObtenerPago(int id)
@@ -45,9 +46,11 @@ namespace TodoPagos.LogicaRepositorio
         public static void EliminarPago(int id)
         {
             BdContexto contexto = BdContexto.GetInstance();
-            var pagos = (from u in contexto.Pagos
+            var pago = (from u in contexto.Pagos
                          where u.PagoId == id
-                         select u);           
+                         select u);
+            contexto.Pagos.Remove(pago.First());
+            contexto.SaveChanges();
         }
 
 

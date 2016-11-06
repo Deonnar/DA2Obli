@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html ng-app="TodoPagos">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Todo Pagos</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+    <link href="//cdn.rawgit.com/cornflourblue/angular-registration-login-example/master/app-content/app.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>Eliminar Pagos</h1>
+    <div ng-controller="EliminarPagos.Controller">
+        <div class="jumbotron">
+
+            <div class="container">
+                <div ng-class="{ 'alert': flash, 'alert-success': flash.type === 'success', 'alert-danger': flash.type === 'error' }" ng-if="flash" ng-bind="flash.message"></div>
+                <!---div ng-view></!--div-->
+
+                <table ng-table="tablaPagos" name="tablaPagos" class="table">
+                    <tr>
+                        <th>Id</th>
+                        <th>Proveedor</th>
+                        <th>Cliente</th>
+                        <th>Forma Pago</th>
+                        <th>Importe</th>
+                        <th>Fecha Pago</th>
+                        <th>Fecha Vencimiento</th>
+
+                        <th></th>
+                    </tr>
+                    <tr ng-repeat="pago in pagos">
+                        <td>{{pago.Id}}</td>
+                        <td>{{pago.Proveedor}}</td>
+                        <td>{{pago.Cliente}}</td>
+                        <td>{{pago.FechaPago}}</td>
+                        <td>{{pago.Importes}}</td>
+                        <td>{{pago.FechaPago}}</td>
+                        <td>{{pago.Vencimiento}}</td>
+                        
+                        <td>
+                            <div>
+                                <input type="button" value="Eliminar" class="btn btn-danger" ng-click="eliminar(pago.Id)" />
+                            </div>
+                        </td>
+
+                    </tr>
+                    <tr ng-repeat="pago in pagos">
+                        <td>{{pago.Id}}</td>
+                        <td>{{pago.Proveedor}}</td>
+                        <td>{{pago.Cliente}}</td>
+                        <td>{{pago.FechaPago}}</td>
+                        <td>{{pago.Importes}}</td>
+                        <td>{{pago.FechaPago}}</td>
+                        <td>{{pago.Vencimiento}}</td>
+
+                        <td>
+                            <div>
+                                <input type="button" value="Eliminar" class="btn btn-danger" ng-click="eliminar(pago.Id)" />
+                            </div>
+                        </td>
+
+                    </tr>
+
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="//code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="//code.angularjs.org/1.2.20/angular.js"></script>
+    <script src="//code.angularjs.org/1.2.20/angular-route.js"></script>
+    <script src="//code.angularjs.org/1.2.13/angular-cookies.js"></script>
+
+</body>
+</html>

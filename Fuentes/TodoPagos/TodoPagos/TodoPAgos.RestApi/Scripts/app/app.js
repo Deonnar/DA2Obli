@@ -1,7 +1,7 @@
 ﻿(function() {
     'use-strict';
 
-    angular.module('Tresana', []);
+    angular.module('TodoPagos', []);
 
 })();
 
@@ -9,7 +9,7 @@
 (function () {
     'use-strict';
 
-    var app = angular.module('Tresana', ['ngMessages', 'ngRoute']);
+    var app = angular.module('TodoPagos', ['ngMessages', 'ngRoute']);
 
     app.config(function ($routeProvider, $locationProvider) {
         $routeProvider
