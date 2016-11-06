@@ -8,7 +8,7 @@
         var ctrl = this;
         ctrl.administrador = administradorServicio;
 
-        $scope.Administrador = function () {
+        $scope.NuevoAdministrador = function () {
             administradorServicio.nuevoAdmin($scope.nombre, $scope.apellido, $scope.contrasenia, $scope.direccion, $scope.nombreusuario           
             ).then(function () {
                 if (nuevo.message)

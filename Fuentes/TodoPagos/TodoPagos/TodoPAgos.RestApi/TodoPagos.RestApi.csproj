@@ -266,6 +266,8 @@
     <Content Include="app\login\login.html" />
     <Content Include="app\login\loginController.js" />
     <Content Include="app\login\loginServicio.js" />
+    <Content Include="app\pagos\pagoController.js" />
+    <Content Include="app\pagos\pagoServicio.js" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -278,9 +280,9 @@
     <Content Include="app\administradores\NuevoAdministrador.html" />
     <Content Include="app\administradores\ModificarAdministrador.html" />
     <Content Include="Pages\Pagos\EditarPago.html" />
-    <Content Include="Pages\Pagos\EliminarPago.html" />
+    <Content Include="app\pagos\EliminarPago.html" />
     <Content Include="Pages\Pagos\ModificarPago.html" />
-    <Content Include="Pages\Pagos\NuevoPago.html" />
+    <Content Include="app\pagos\NuevoPago.html" />
     <Content Include="Pages\Index.html" />
     <Content Include="Pages\indexTresana.html" />
     <Content Include="Pages\ingresarUsuarios.html" />
@@ -368,7 +370,6 @@
     <Content Include="Views\register\register.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="app\pagos\" />
     <Folder Include="App_Data\" />
     <Folder Include="Scripts\js\" />
     <Folder Include="Views\Usuarios\" />

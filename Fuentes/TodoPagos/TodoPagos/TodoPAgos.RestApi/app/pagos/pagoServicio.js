@@ -6,6 +6,7 @@
     obligatorioApp.service('pagoServicio', function ($log, $http) {
         var pagoServicio = this;
 
+        //POST
         pagoServicio.NuevoPago = function (importe, cliente, proveedor, forma) {
             var promise = $http({
                 url: '/api/pago',
@@ -25,6 +26,18 @@
                  pagoServicio.message = response.data.Message;
              });
             return promise;
+        }
+
+       //GET
+       pagoServicio.getPagos = function getPagos() {
+
+            $http.get('/api/pagos')
+            .success(function (result) {
+                pagoServicio.getPagos = result;
+            })
+            .error(function (data, status) {
+                $log.error(data);
+            });
         }
 
         return pagoServicio;
