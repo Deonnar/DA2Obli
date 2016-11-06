@@ -1,10 +1,11 @@
-﻿<div ng-controller="Login.Controller as loginCtrl">
+﻿   
+<div ng-controller="Login.Controller as loginCtrl">
 
     <div class="form">
         <h1>Login</h1>
         <fieldset>
             <form name="loginForm" novalidate ng-submit="Login()">
-                <input name="loginEmail" type="email" ng-model="loginEmail" required placeholder="Correo">
+                <input name="loginEmail"    type="email"    ng-model="loginEmail"    required placeholder="Correo">
                 <input name="loginPassword" type="password" ng-model="loginPassword" required placeholder="Contraseña">
                 <div class="error-text" ng-messages="loginForm.loginEmail.$error || loginForm.loginPassword.$error " ng-show="(loginForm.$submitted || loginForm.loginEmail.$touched || loginForm.loginPassword.$touched )">
                     <br />
@@ -13,7 +14,7 @@
                 </div>
                 <input type="submit" value="Login" name="confirmLogin" title="Inicia sesion">
                 <footer class="clearfix">
-                    <p><a href="#/createPlayer"><span class="info"></span>(Regístrate)</a></p>
+                  <p><a href="#/createPlayer"><span class="info"></span>(Regístrate)</a></p>
                 </footer>
             </form>
         </fieldset>

@@ -1,0 +1,7 @@
+﻿<div ng-controller="CamposFactura.Controller as cfCtrl">
+    <div ng-repeat="campos in cfCtrl.service.camposFactura">
+        <h2>Id: {{campos.CamposFacturaId}}</h2>
+        <p>Proveedor: {{campos.Proveedor}}</p>
+        <p>Descripcion: {{campos.Descripcion}}</p>
+    </div>
+</div>  

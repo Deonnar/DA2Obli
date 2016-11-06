@@ -6,39 +6,18 @@
     obligatorioApp.service('loginServicio', function ($log, $http) {
         var loginServicio = this;
 
-        loginServicio.login = function (u, password) {
+        loginServicio.login = function (usuario, contraseña) {
             var promise = $http({
-                url: '/api/auth',
+                url: '/api/login',
                 method: "POST",
-                data: { 'email': emaildata, 'password': password }
+                data: { 'nombreUsuario': usuario, 'contrasenia': contrasenia }
             })
              .then(function (response) {
-                 sessionStorage.authToken = response.data.Email;
-                 loginServicio.TypeOfUser().then(function (typeOfUser) {
-                     if (typeOfUser.data == 1) {
-                         location.href = "#/stocks";
-                         sessionStorage.typeOfUser = 1;
-                     }
-                     if (typeOfUser.data == 2) {
-                         location.href = "#/portfolio";
-                         sessionStorage.typeOfUser = 2;
-                     }
-
-                 });
+                 //sessionStorage.authToken = response.data.Email;
+                 location.href = "#/menu";
              },
              function (response) {
                  loginServicio.message = response.data.Message;
-             });
-            return promise;
-        }
-
-        loginServicio.TypeOfUser = function () {
-            var promise = $http.get('/api/auth?mail=' + sessionStorage.authToken)
-             .success(function (result) {
-                 return result;
-             })
-             .error(function (data, status) {
-                 $log.error(data);
              });
             return promise;
         }

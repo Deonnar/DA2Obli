@@ -258,6 +258,12 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\administradores\administradorServicio.js" />
+    <Content Include="app\camposFactura\camposFactura.html" />
+    <Content Include="app\camposFactura\camposFacturaController.js" />
+    <Content Include="app\camposFactura\camposFacturaServicio.js" />
+    <Content Include="app\login\log.html" />
+    <Content Include="app\login\login.html" />
     <Content Include="app\login\loginController.js" />
     <Content Include="app\login\loginServicio.js" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
@@ -267,9 +273,10 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Pages\Administrador\EliminarAdministrador.html" />
-    <Content Include="Pages\Administrador\NuevoAdministrador.html" />
-    <Content Include="Pages\Administrador\ModificarAdministrador.html" />
+    <Content Include="index.html" />
+    <Content Include="app\administradores\EliminarAdministrador.html" />
+    <Content Include="app\administradores\NuevoAdministrador.html" />
+    <Content Include="app\administradores\ModificarAdministrador.html" />
     <Content Include="Pages\Pagos\EditarPago.html" />
     <Content Include="Pages\Pagos\EliminarPago.html" />
     <Content Include="Pages\Pagos\ModificarPago.html" />
@@ -277,11 +284,13 @@
     <Content Include="Pages\Index.html" />
     <Content Include="Pages\indexTresana.html" />
     <Content Include="Pages\ingresarUsuarios.html" />
-    <Content Include="app\login\login.html" />
-    <Content Include="Pages\Administrador\EditarAdministrador.html" />
+    <Content Include="app\administradores\EditarAdministrador.html" />
     <Content Include="Pages\Proveedores\Proveedores.html" />
+    <Content Include="Pages\test\login.html" />
+    <Content Include="Pages\test\loginController.js" />
+    <Content Include="Pages\test\loginService.js" />
     <Content Include="Scripts\administradores\EliminarAdministrador.js" />
-    <Content Include="Scripts\administradores\NuevoAdministradorController.js" />
+    <Content Include="app\administradores\administradorController.js" />
     <Content Include="Scripts\administradores\ModificarAdministradorController.js" />
     <Content Include="Scripts\ai.0.15.0-build58334.js" />
     <Content Include="Scripts\ai.0.15.0-build58334.min.js" />
@@ -359,7 +368,6 @@
     <Content Include="Views\register\register.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="app\usuarios\" />
     <Folder Include="App_Data\" />
     <Folder Include="Scripts\js\" />
     <Folder Include="Views\Usuarios\" />

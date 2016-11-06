@@ -1,4 +1,31 @@
 ﻿(function () {
+    'use strict';
+
+    var obligatorioApp = angular.module('TodoPagos');
+    
+    obligatorioApp.controller('Administrador.Controller', function ($scope, administradorServicio) {
+
+        var ctrl = this;
+        ctrl.administrador = administradorServicio;
+
+        $scope.Administrador = function () {
+            administradorServicio.nuevoAdmin($scope.nombre, $scope.apellido, $scope.contrasenia, $scope.direccion, $scope.nombreusuario           
+            ).then(function () {
+                if (nuevo.message)
+                    $scope.showError = administradorServicio.message;
+            });
+            //   $scope.token = sessionStorage.authToken;
+        };
+
+        return ctrl;
+    });
+})();
+
+
+
+
+
+/*(function () {
     'use-strict';
 
     angular.module('TodoPagos')
@@ -44,4 +71,4 @@
             }
 
         });
-})();
+})();*/

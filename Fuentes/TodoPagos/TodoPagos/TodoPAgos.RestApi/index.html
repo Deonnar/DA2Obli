@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="lib/jquery-1.9.1.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-mocks.js"></script>
+    <script src="lib/bootbox.min.js"></script>
+    <script src="lib/momentjs.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-messages.js"></script>
+    <script src="https://code.angularjs.org/1.4.6/angular-messages.js"></script>
+    <script src="https://code.angularjs.org/1.4.6/angular-route.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.min.js"></script>
+  
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+    <link href="//cdn.rawgit.com/cornflourblue/angular-registration-login-example/master/app-content/app.css" rel="stylesheet" />
+
+    <script src="app/login/loginServicio.js"></script>
+    <script src="app/login/loginController.js"></script>
+    <script src="Scripts/app/app.js"></script>
+        
+    <script src="app/menu/menuController.js"></script>
+        
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/Styles.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+</head>
+<body ng-app="TodoPagos">
+    <div class="wrapper">
+        <div class="sidebar">
+            <h1>Bienvenido a el Sistema de Todo Pagos</h1>
+
+            <table ng-table="tablaAdministradores" name="tablaAdministradores" class="table">
+                <tr>
+                    <th>
+                        <ul class="nav MenuOpciones">
+                            <li> <a href="#/Pagos">Nuevo Administrador</a></li>
+                            <li> <a href="#/ModificarAdmin">Modificar Administrador</a></li>
+                            <li> <a href="#/BajaAdmin">Baja Administrador</a></li>
+                        </ul>
+                    </th>
+                    <th>
+                        <ul class="nav MenuOpciones">
+                            <li> <a href="#/Pagos">Nuevo Pago</a></li>
+                            <li> <a href="#/ModificarAdmin">Modificar Pago</a> </li>
+                            <li> <a href="#/BajaAdmin">Baja Pago</a> </li>
+                        </ul>
+                    </th>
+                    <th>
+                        <ul class="nav MenuOpciones">
+                            <li> <a href="#/Pagos">Ver Proveedores</a></li>
+                            <li> <a href="#/ModificarAdmin">Administrar Puntos</a> </li>
+                            <li ng-controller="Login.Controller as loginCtrl" ng-click="Logout()"><a>Logout</a></li>
+                        </ul>
+                    </th>
+
+                </tr>
+            </table>
+
+            <div class="content">
+                <div ng-view>
+                    <!--view here-->
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('.side-panel-toggle').on('click', function () {
+                $('.content').toggleClass('content-is-open');
+            });
+        });
+    </script>
+</body>
+</html>

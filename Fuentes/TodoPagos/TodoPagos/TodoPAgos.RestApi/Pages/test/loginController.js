@@ -1,31 +1,31 @@
 ﻿(function () {
     'use strict';
 
-    var obligatorioApp = angular.module('TodoPagos');
-    
-    obligatorioApp.controller('Login.Controller', function ($scope, loginServicio) {
+    var obligatorioApp = angular.module('Obligatorio');
+
+    obligatorioApp.controller('Login.Controller', function ($scope, loginService) {
 
         var ctrl = this;
-        ctrl.servicio = loginServicio;
+        ctrl.service = loginService;
 
         $scope.Login = function () {
-            loginServicio.login($scope.usuario, $scope.contraseña).then(function () {
-                if (login.message)
-                    $scope.showError = loginServicio.message;
+            loginService.login($scope.loginEmail, $scope.loginPassword).then(function () {
+                if (loginService.message)
+                    $scope.showError = loginService.message;
             });
-            //   $scope.token = sessionStorage.authToken;
-        };
-/*
-        $scope.Logout = function () {
-            loginServicio.logout();
+            $scope.token = sessionStorage.authToken;
         };
 
-        var errorMessagge = loginServicio.message;
+        $scope.Logout = function () {
+            loginService.logout();
+        };
+
+        var errorMessagge = loginService.message;
 
         $scope.showError = errorMessagge;
 
         $scope.$watch(function () {
-            return loginServicio.message;
+            return loginService.message;
         }, function (value) {
             $scope.showError = value;
         });
@@ -38,7 +38,7 @@
             return sessionStorage.authToken;
         }, function (value) {
             $scope.showToken = value;
-        });*/
+        });
 
         return ctrl;
     });
