@@ -31,8 +31,8 @@ namespace TodoPAgos.RestApi.Controllers
 
             try
             {
-                Puntos puntos = RepositorioPuntos.ObtenerPuntos(id);
-                return Ok(puntos);
+             //   Puntos puntos = RepositorioPuntos.ObtenerPuntos(id);
+                return Ok();
             }
             catch (Exception e)
             {

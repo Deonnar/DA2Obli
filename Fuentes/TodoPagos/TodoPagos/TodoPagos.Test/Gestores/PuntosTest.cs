@@ -16,7 +16,7 @@ namespace TodoPagos.Test.Gestores
         private static Puntos punto = new Puntos();
         public void SetUp()
         {
-            BdContexto contexto = BdContexto.GetInstance();
+            BdContexto contexto; //= BdContexto.GetInstance();
            
         }
 
@@ -25,6 +25,16 @@ namespace TodoPagos.Test.Gestores
             punto.ValorPunto = 10;
             return punto;
         }
+
+        [TestMethod]
+        public void NuevaPagoTest()
+        {
+            SetUp();
+            Puntos punto = CrearPuntos();
+            RepositorioPuntos.AgregarPunto(punto);
+           // Assert.Equals(punto, RepositorioPuntos.ObtenerPunto(pago.PagoId);
+        }
+
 
 
     }

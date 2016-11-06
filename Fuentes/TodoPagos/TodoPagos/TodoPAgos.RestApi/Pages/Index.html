@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    
+    <!-- angular -->
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-messages.js"></script>
+    <script src="lib/angular-route.js"></script>
+
+    <!-- jQuery library -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery-1.9.1.js"></script>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css">
+    <script src="lib/bootstrap/bootstrap.min.js"></script>
+   
+    <script src="app/app.js"></script>
+    
+
+    <script src="../Scripts/usuarios/ingresarUsuariosController.js"></script>
+   
+    <script src="../Scripts/jquery-1.9.1.js"></script>
+    <script src="../Scripts/bootstrap.js"></script>
+    <script src="../Scripts/angular.min.js"></script>
+    <script src="../Scripts/app/app.js"></script>
+    <script src="../Scripts/tasks/tasksController.js"></script>
+    <script src="../Scripts/app/app.js"></script>
+    <script src="../Scripts/tasks/tasksController.js"></script>
+
+      
+    <!-- mas estilos -->
+    <link rel="stylesheet" href="lib/css/general.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body ng-app="Tresana">
+   
+    <div class="container" style="text-align:center">
+
+        <h1>Bienvenido a Todo Pago</h1>
+
+        <div ng-controller="Tasks.Controller as tasksCtrl">
+            Filter by:
+            <input type="text" ng-model="tasksCtrl.filter" />
+            Order by:
+            <select ng-model="tasksCtrl.orderBy">
+                <option value="StartDate">Start Date</option>
+                <option value="CreationDate">Creation Date</option>
+            </select>
+            <div ng-repeat="task in tasksCtrl.tasks | filter: tasksCtrl.filter| orderBy: tasksCtrl.orderBy">
+                <h2>SE Name: {{task.Name}}</h2>
+                <p>ZZZZZZ   sebita   ption: {{task.Description}}</p>
+                <p>Creation Date: {{tasksCtrl.printDate(task.CreationDate)}}</p>
+                <p>Start Date: {{tasksCtrl.printDate(task.StartDate)}}</p>
+                <p>Due fff Date: {{tasksCtrl.printDate(task.DueDate)}}</p>
+            </div>
+        </div>   
+
+
+
+        <div style="padding:5%; text-align:center">
+            <ul class="nav nav-pills" style="display: inline-block; list-style-type: none; text-align:center">
+                <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        Usuarios <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li role="presentation" class="enabled"><a href="#/usuarios">Agregar</a></li>
+                        <li role="presentation" class="enabled"><a href="#/altaAdministrador.html">Eliminar</a></li>
+                    </ul>
+                </li>
+                          
+                <li role="presentation" class="enabled"><a href="#/pagos">Iniciar Pago</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <ng-view />
+
+</body>
+</html>

@@ -12,7 +12,7 @@ using TodoPagos.Dominio;
 
 namespace TodoPagos.Test.Gestores
 {
-    [TestClass]
+  /*  [TestClass]
     public class GestionPagosTest
     {
         private static Pago pago = new Pago();
@@ -49,5 +49,5 @@ namespace TodoPagos.Test.Gestores
         }
 
 
-    }
+    }*/
 }

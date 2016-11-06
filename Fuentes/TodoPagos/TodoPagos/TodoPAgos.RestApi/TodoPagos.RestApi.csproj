@@ -265,8 +265,16 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Pages\altaAdministrador.html" />
+    <Content Include="Pages\altaPago.html" />
+    <Content Include="Pages\Index.html" />
+    <Content Include="Pages\indexTresana.html" />
+    <Content Include="Pages\ingresarUsuarios.html" />
     <Content Include="Pages\login.html" />
-    <Content Include="Pages\principal.html" />
+    <Content Include="Pages\modificarAdministrador.html" />
+    <Content Include="Scripts\administradores\altaAdministradoresController.js" />
+    <Content Include="Scripts\administradores\bajaAdministradoresController.js" />
+    <Content Include="Scripts\administradores\modificarAdministradoresController.js" />
     <Content Include="Scripts\ai.0.15.0-build58334.js" />
     <Content Include="Scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="Scripts\angular-mocks.js" />
@@ -276,10 +284,7 @@
     <Content Include="Scripts\angular-ui\ui-bootstrap.min.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
-    <Content Include="Scripts\app\apps.js" />
-    <Content Include="Scripts\js\app.js" />
-    <Content Include="Scripts\js\controllers.js" />
-    <Content Include="Scripts\js\servicios.js" />
+    <Content Include="Scripts\app\app.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
@@ -313,11 +318,12 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\pagos\pagosController.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\pagos\ingresarPagosController.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
-    <Content Include="Views\index.html" />
+    <Content Include="Scripts\tasks\tasksController.js" />
+    <Content Include="Scripts\usuarios\ingresarUsuariosController.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -340,7 +346,9 @@
     <Content Include="Views\register\register.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="app\usuarios\" />
     <Folder Include="App_Data\" />
+    <Folder Include="Scripts\js\" />
     <Folder Include="Views\Usuarios\" />
   </ItemGroup>
   <ItemGroup>
