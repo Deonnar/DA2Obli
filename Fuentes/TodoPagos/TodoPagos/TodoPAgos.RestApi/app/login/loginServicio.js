@@ -22,7 +22,7 @@
             return promise;
         }
 
-        loginServicio.logout = function () {
+       /* loginServicio.logout = function () {
             sessionStorage.typeOfUser = 0;
             $http({
                 url: '/api/auth?email=' + sessionStorage.authToken,
@@ -31,7 +31,7 @@
             sessionStorage.authToken = undefined;
             location.href = "#/login"
         }
-
+        */
         return loginServicio;
     });
 })();

@@ -266,6 +266,7 @@
     <Content Include="app\login\login.html" />
     <Content Include="app\login\loginController.js" />
     <Content Include="app\login\loginServicio.js" />
+    <Content Include="app\pagos\ModificarPago.html" />
     <Content Include="app\pagos\pagoController.js" />
     <Content Include="app\pagos\pagoServicio.js" />
     <Content Include="Areas\HelpPage\HelpPage.css" />

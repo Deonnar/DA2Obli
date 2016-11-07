@@ -10,7 +10,16 @@
         ctrl.pago = pagoServicio;
         //obtener lista pagos
         ctrl.pago.getPagos();
-       
+              
+        //borrar pago
+        $scope.BorrarPago = function () {
+            pagoServicio.BorrarPago($scope.id)
+                .then(function () {
+                if (nuevo.message)
+                    $scope.showError = pagoServicio.message;
+            });
+        };
+
         //agregar nuevo pago
         $scope.NuevoPago = function () {
             pagoServicio.NuevoPago($scope.importe, $scope.cliente, $scope.proveedor, $scope.forma           

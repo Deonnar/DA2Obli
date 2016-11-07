@@ -6,6 +6,7 @@
     obligatorioApp.service('administradorServicio', function ($log, $http) {
         var administradorServicio = this;
 
+        //NUEVO ADMIN
         administradorServicio.nuevoAdmin = function (nombre, apellido, contrasenia, direccion, nombreusuario) {
             var promise = $http({
                 url: '/api/administrador',
@@ -27,6 +28,7 @@
             return promise;
         }
 
+
         administradorServicio.logout = function () {
             sessionStorage.typeOfUser = 0;
             $http({
@@ -36,6 +38,23 @@
             sessionStorage.authToken = undefined;
             location.href = "#/administrador"
         }
+
+        //DELETE
+        administradorServicio.BorrarAdmin = function (id) {
+            var promise = $http({
+                url: '/api/administrador/' + id,
+                method: "DELETE",
+                data: {}
+            })
+             .then(function (response) { 
+                 location.href = "#/index";
+             },
+             function (response) {
+                 pagoServicio.message = response.data.Message;
+             });
+            return promise;
+        }
+
 
         return administradorServicio;
     });

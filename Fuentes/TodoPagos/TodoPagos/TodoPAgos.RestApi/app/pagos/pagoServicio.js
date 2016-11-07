@@ -28,6 +28,23 @@
             return promise;
         }
 
+        //DELETE
+        pagoServicio.BorrarPago = function (id) {
+            var promise = $http({
+                url: '/api/pago/' + id,
+                method: "DELETE",
+                data: {}
+            })
+             .then(function (response) {
+                 //sessionStorage.authToken = response.data.Email;
+                 location.href = "#/index";
+             },
+             function (response) {
+                 pagoServicio.message = response.data.Message;
+             });
+            return promise;
+        }
+
        //GET
        pagoServicio.getPagos = function getPagos() {
 
@@ -39,6 +56,8 @@
                 $log.error(data);
             });
         }
+
+
 
         return pagoServicio;
     });
